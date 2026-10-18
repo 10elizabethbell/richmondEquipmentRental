@@ -83,7 +83,8 @@ canvas.dirt:active{cursor:grabbing}
 /* ---------- soil sections ---------- */
 .under{background:var(--soil);position:relative}
 .services{padding:38px 0 56px}
-.svc{list-style:none;margin:0;padding:0;border-top:1px solid rgba(244,236,218,.14)}
+.svc{list-style:none;margin:0;padding:0}
+.svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)}
 .svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;
   border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:clamp(1.1rem,4.8vw,1.4rem);letter-spacing:-.01em}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);color:var(--cream);transition:background .15s,color .15s}
@@ -91,7 +92,7 @@ canvas.dirt:active{cursor:grabbing}
 .svc a:hover,.svc a:focus-visible{outline:none;background:none;box-shadow:none}
 .svc a:hover .arrow,.svc a:focus-visible .arrow{background:var(--yellow);color:var(--ink)}
 .svc a:focus-visible .arrow{outline:3px solid var(--yellow);outline-offset:3px}
-.svc-note{color:var(--cream-dim);margin:14px 0 0;font-size:.95rem}
+.svc-note{color:var(--cream-dim);margin:14px 0 0;font-size:1rem}
 
 .who{display:grid;gap:26px;margin-top:52px}
 .who h3{font-size:1.35rem;color:var(--yellow);margin-bottom:8px}
@@ -101,10 +102,9 @@ canvas.dirt:active{cursor:grabbing}
 .how{position:relative;padding:44px 0 64px;background:var(--soil-2)}
 .steps{list-style:none;margin:0 0 44px;padding:0;display:grid;gap:22px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s}
-.steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;
-  background:var(--yellow);color:var(--ink);font-weight:900;font-size:1.15rem}
+.steps li::before{content:counter(s);font-weight:900;font-size:2.4rem;line-height:.9;color:var(--yellow);text-align:center}
 .steps b{display:block;font-size:1.12rem;line-height:1.32;padding-top:2px}
-.steps span{color:var(--cream-dim);font-size:.98rem}
+.steps span{color:var(--cream-dim);font-size:1rem}
 .area{margin:0 0 40px;font-size:1.05rem;color:var(--cream-dim)}
 .area b{color:var(--cream)}
 
@@ -114,16 +114,17 @@ canvas.dirt:active{cursor:grabbing}
 /* ---------- form ---------- */
 .estimate{background:rgba(29,26,18,.28);border-radius:18px;padding:22px 18px 24px}
 .estimate h3{font-size:1.6rem;margin-bottom:6px}
-.estimate .sub{margin:0 0 20px;color:var(--cream-dim);font-size:.98rem}
+.estimate .sub{margin:0 0 20px;color:var(--cream-dim);font-size:1rem}
 .field{display:block;margin-bottom:18px}
 .field>span,.legend{display:block;font-weight:700;margin-bottom:8px;font-size:1rem}
-.field small{font-weight:400;font-size:.9rem;color:var(--cream-dim)}
+.field small{font-weight:400;font-size:1rem;color:var(--cream-dim)}
 .field input,.field textarea{width:100%;min-height:52px;padding:13px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);
   background:rgba(244,236,218,.06);color:var(--cream);font:16px/1.4 var(--font);transition:border-color .15s,background .15s}
 .field textarea{min-height:110px;resize:vertical}
 .field input::placeholder,.field textarea::placeholder{color:#b7a98c}
 .field input:hover,.field textarea:hover,.field input:focus,.field textarea:focus{border-color:var(--laser);outline:none;background:rgba(244,236,218,.09)}
 fieldset{border:0;margin:0 0 18px;padding:0}
+legend{padding:0}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px}
@@ -134,16 +135,21 @@ fieldset{border:0;margin:0 0 18px;padding:0}
 .chip input:checked+span:hover{border-color:var(--laser)}
 .estimate .btn{width:100%;margin-top:6px}
 .estimate .btn:hover,.estimate .btn:focus-visible{outline:3px solid var(--laser);outline-offset:2px}
-.err{display:none;margin:-8px 0 14px;color:#ffb4a8;font-weight:600;font-size:.95rem}
+.err{display:none;margin:-8px 0 14px;color:#ffb4a8;font-weight:600;font-size:1rem}
 .err.on{display:block}
-.handoff{margin:12px 0 0;font-size:.9rem;color:var(--cream-dim)}
+.handoff{margin:12px 0 0;font-size:1rem;color:var(--cream-dim)}
+.composed{margin-top:18px;padding:16px;border-radius:12px;background:rgba(244,236,218,.07)}
+.composed p{margin:0 0 10px;font-size:1rem}
+.composed pre{margin:0 0 12px;white-space:pre-wrap;font:15px/1.5 var(--font);color:var(--cream);user-select:all;-webkit-user-select:all}
+.copy{min-height:44px;padding:0 16px;border-radius:10px;border:2px solid rgba(244,236,218,.3);background:none;color:var(--cream);font:700 1rem var(--font);cursor:pointer}
+.copy:hover,.copy:focus-visible{border-color:var(--laser);outline:none}
 
 /* ---------- proof ---------- */
 .proof{background:var(--site);padding:52px 0 0;position:relative}
-.photo{position:relative;max-width:760px;margin:0 auto}
+.photo{position:relative;max-width:760px}
 .photo img{width:100%;height:auto;border-radius:16px 16px 0 0;box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}
 .dirt-close{position:relative;height:150px;margin-top:-62px;z-index:2}
-.fb{display:flex;align-items:center;justify-content:center;gap:12px;max-width:760px;margin:0 auto}
+.fb{display:flex;align-items:center;justify-content:center;gap:12px;max-width:760px}
 
 /* ---------- close + footer ---------- */
 .close{background:var(--soil);padding:18px 0 60px;text-align:left}
@@ -153,7 +159,7 @@ fieldset{border:0;margin:0 0 18px;padding:0}
 .close .actions{max-width:420px}
 .close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;text-decoration:none}
 .close .num:hover{color:var(--yellow)}
-footer{background:var(--soil-deep);padding:34px 0 40px;font-size:.95rem;color:var(--cream-dim)}
+footer{background:var(--soil-deep);padding:34px 0 40px;font-size:1rem;color:var(--cream-dim)}
 footer .wrap{display:grid;gap:10px}
 footer b{color:var(--cream);text-transform:uppercase;font-weight:900;letter-spacing:-.01em}
 footer a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
@@ -211,11 +217,11 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
   </div>
   <div class="wrap hero-copy">
     <h1>Let me handle the <em>dirty work.</em></h1>
-    <p class="promise">I dig it, break it out and grade it, then leave your site clean and ready for what comes next.</p>
+    <p class="promise">I treat your property like it's my own, tell you straight what the job takes, and leave it ready for what comes next.</p>
     <div class="actions">
       <a class="btn btn-fill" id="heroText" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work.">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text me photos for an estimate</a>
-      <a class="btn btn-line" href="#estimate">Estimate form</a>
+      <a class="btn btn-line" href="#estimate">Fill out the estimate form</a>
     </div>
   </div>
   <div class="dirt-hero">
@@ -230,12 +236,12 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     <div>
       <h2 id="svcH">What I do</h2>
       <ul class="svc">
-        <li><a data-svc="trenching and excavation" href="#">Trenching &amp; excavation<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="concrete breaking and removal" href="#">Concrete breaking &amp; removal<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="driveway or patio tear-out" href="#">Driveway &amp; patio tear-outs<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="yard grading and gravel spreading" href="#">Grading &amp; gravel spreading<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="shrub removal and property cleanup" href="#">Shrub removal &amp; cleanup<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="tight-access" href="#">Tight-access work<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="trenching and excavation" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20trenching%20and%20excavation%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Trenching &amp; excavation<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="concrete breaking and removal" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20concrete%20breaking%20and%20removal%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Concrete breaking &amp; removal<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="driveway or patio tear-out" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20driveway%20or%20patio%20tear-out%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Driveway &amp; patio tear-outs<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="yard grading and gravel spreading" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20yard%20grading%20and%20gravel%20spreading%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Grading &amp; gravel spreading<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="shrub removal and property cleanup" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20shrub%20removal%20and%20property%20cleanup%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Shrub removal &amp; cleanup<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
+        <li><a data-svc="tight-access" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20tight-access%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Tight-access work<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       </ul>
       <p class="svc-note">Tap a job to text me about it.</p>
     </div>
@@ -277,15 +283,21 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
           <label class="chip"><input type="checkbox" name="job" value="Driveway / patio tear-out"><span>Driveway / patio tear-out</span></label>
           <label class="chip"><input type="checkbox" name="job" value="Grading / gravel"><span>Grading / gravel</span></label>
           <label class="chip"><input type="checkbox" name="job" value="Shrub removal / cleanup"><span>Shrub removal / cleanup</span></label>
+          <label class="chip"><input type="checkbox" name="job" value="Tight access"><span>Tight access</span></label>
           <label class="chip"><input type="checkbox" name="job" value="Something else"><span>Something else</span></label>
         </div>
       </fieldset>
-      <label class="field"><span>Where's the job?</span><input name="loc" autocomplete="street-address" placeholder="Town or address"></label>
-      <p class="err" id="locErr">Add the town or address so I know where the job is.</p>
-      <label class="field"><span>Tell me about the work</span><textarea name="desc" placeholder="What needs to come out, how big, how to get to it"></textarea></label>
-      <p class="err" id="descErr">A sentence or two about the work, please.</p>
+      <label class="field"><span>Where's the job?</span><input name="loc" autocomplete="street-address" placeholder="Town or address" aria-describedby="locErr"></label>
+      <p class="err" id="locErr" aria-live="polite">Add the town or address so I know where the job is.</p>
+      <label class="field"><span>Tell me about the work</span><textarea name="desc" aria-describedby="descErr" placeholder="What needs to come out, how big, how to get to it"></textarea></label>
+      <p class="err" id="descErr" aria-live="polite">A sentence or two about the work, please.</p>
       <button class="btn btn-fill" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Open my text to Steve</button>
       <p class="handoff">Opens your messages app with this written out. Attach your pictures, then hit send.</p>
+      <div class="composed" id="composed" hidden aria-live="polite">
+        <p>On a computer? Text this to <a href="tel:+19175257878">917-525-7878</a> from your phone, with your pictures:</p>
+        <pre id="composedText"></pre>
+        <button type="button" class="copy" id="copyMsg">Copy message</button>
+      </div>
     </form>
   </div>
 </section>
@@ -295,7 +307,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
   <div class="wrap">
     <h2 id="proofH">Recent work</h2>
     <div class="photo">
-      <img src="img/work-01.webp" width="960" height="901" loading="lazy" decoding="async" draggable="false"
+      <img src="img/work-01.webp" srcset="img/work-01.webp 960w, img/work-01-1520.webp 1520w" sizes="(min-width:800px) 760px, calc(100vw - 40px)" width="960" height="901" loading="lazy" decoding="async" draggable="false"
         alt="A cleared and graded lot with a Bobcat mini excavator, a tracked loader and a laser level on a tripod">
     </div>
   </div>
@@ -310,7 +322,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     <a class="btn btn-line fb" href="https://www.facebook.com/profile.php?id=100000051669923" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21z"/></svg>Click to see more of my work.</a>
     <h2 id="closeH">Have a project coming up?</h2>
-    <p>Send me pictures, the location and a description of the work for an estimate.</p>
+    <p>Or need help with part of a job? Text me the pictures and the location.</p>
     <div class="actions"><a class="btn btn-fill" id="closeText" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work.">Text me</a></div>
     <a class="num" href="tel:+19175257878">or call Steve at 917-525-7878</a>
   </div>
@@ -336,27 +348,36 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
   var NUM = '+19175257878';
   function sms(body){ return 'sms:' + NUM + '?&body=' + encodeURIComponent(body); }
   window.__sms = sms;
-  document.querySelectorAll('[data-svc]').forEach(function(a){
-    a.href = sms("Hi Steve, I have a " + a.dataset.svc + " job I'd like an estimate on. Location: ");
-  });
   var f = document.getElementById('estimate');
   f.addEventListener('submit', function(e){
     e.preventDefault();
-    var name = f.name.value.trim(), loc = f.loc.value.trim(), desc = f.desc.value.trim();
+    var el = f.elements, name = el.name.value.trim(), loc = el.loc.value.trim(), desc = el.desc.value.trim();
     var jobs = [].slice.call(f.querySelectorAll('[name=job]:checked')).map(function(i){ return i.value; });
     var ok = true;
-    document.getElementById('locErr').classList.toggle('on', !loc); if (!loc) ok = false;
-    document.getElementById('descErr').classList.toggle('on', !desc); if (!desc) ok = false;
-    if (!ok) { (loc ? f.desc : f.loc).focus(); return; }
+    [['loc', loc], ['desc', desc]].forEach(function(p){
+      document.getElementById(p[0] + 'Err').classList.toggle('on', !p[1]);
+      el[p[0]].setAttribute('aria-invalid', p[1] ? 'false' : 'true');
+      if (!p[1]) ok = false;
+    });
+    if (!ok) { (loc ? el.desc : el.loc).focus(); return; }
     var lines = ['Hi Steve' + (name ? ', this is ' + name : '') + '. I\'d like an estimate.'];
     if (jobs.length) lines.push('Job: ' + jobs.join(', '));
     lines.push('Location: ' + loc);
     lines.push('Work: ' + desc);
     lines.push('Pictures attached.');
-    location.href = sms(lines.join('\n'));
+    var msg = lines.join('\n');
+    /* computers often can't open a text, so the written message stays on screen to copy or retype */
+    document.getElementById('composed').hidden = false;
+    document.getElementById('composedText').textContent = msg;
+    location.href = sms(msg);
   });
   ['loc','desc'].forEach(function(n){
-    f[n].addEventListener('input', function(){ if (f[n].value.trim()) document.getElementById(n + 'Err').classList.remove('on'); });
+    f.elements[n].addEventListener('input', function(){ if (f.elements[n].value.trim()) { document.getElementById(n + 'Err').classList.remove('on'); f.elements[n].setAttribute('aria-invalid', 'false'); } });
+  });
+  document.getElementById('copyMsg').addEventListener('click', function(){
+    var b = this, t = document.getElementById('composedText').textContent;
+    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; }, function(){ b.textContent = 'Select the text above to copy'; }); }
+    catch (_) { b.textContent = 'Select the text above to copy'; }
   });
 })();
 
@@ -368,15 +389,16 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       d += 'L' + x + ' ' + (14 + Math.sin(x * .011 + seed) * 5 + Math.sin(x * .037 + seed * 2) * 3 + Math.sin(x * .09 + seed * 3) * 1.5).toFixed(1);
     svg.innerHTML = '<path d="' + d + 'Z" fill="' + fill + '"/>';
   }
-  edge(document.getElementById('seam1'), '#3d2a1b', 1.3);
-  edge(document.getElementById('seam2'), '#4a3322', 4.1);
+  var css = getComputedStyle(document.documentElement);
+  edge(document.getElementById('seam1'), css.getPropertyValue('--soil').trim(), 1.3);
+  edge(document.getElementById('seam2'), css.getPropertyValue('--soil-2').trim(), 4.1);
 })();
 
 /* ---------- the dirt: soil you dig with an excavator bucket ---------- */
 (function(){
   var TUNE = {
     GRADE: 0.40,        // laser grade height, share of canvas height
-    REPOSE: 1.05,       // max height step between columns, x column width (angle of repose)
+    REPOSE: .75,        // max height step between columns, x column width (angle of repose)
     RELAX: 5,           // slump passes per frame
     SPRING: 140,        // how hard the bucket chases the finger
     DAMP: 13,
@@ -429,7 +451,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       if (bottom - r.top > 0) { this.clearX = right - r.left + 40; this.clearH = H - (bottom - r.top) - 40; }
     }
     this.rep = new Float32Array(this.n);
-    for (var q2 = 0, v = 1; q2 < this.n; q2++) { v += (Math.random() - .5) * .35; v = Math.max(.7, Math.min(1.4, v)); this.rep[q2] = v; }
+    for (var q2 = 0, v = 1; q2 < this.n; q2++) { v += (Math.random() - .5) * .35; v = Math.max(.85, Math.min(1.15, v)); this.rep[q2] = v; }
     this.maxGrains = phone ? 500 : 1100;
     this.h = new Float32Array(this.n);
     this.profile();
@@ -442,7 +464,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     var H = this.H, g = this.grade, n = this.n, cw = this.cw, W = this.W;
     var x0 = this.clearX, span = W - x0, bumps = [], k = this.clearX ? 3 : 2, unit = Math.min(H, 260);
     for (var b = 0; b < k; b++) bumps.push({ x: x0 + (b + .5 + (Math.random() - .5) * .5) / k * span, a: unit * (.16 + Math.random() * .14), w: Math.max(30, span * (.05 + Math.random() * .05)) });
-    if (this.clearX) bumps.push({ x: x0 + span * .62, a: H * .34, w: span * .16 });   // the spoil pile
+    if (this.clearX) bumps.push({ x: x0 + span * .6, a: H * .5, w: span * .22 });   // the spoil pile
     var trench = { x: x0 + Math.random() * span, w: Math.max(24, span * .04) };
     var seed = Math.random() * 10;
     for (var i = 0; i < n; i++) {
@@ -455,6 +477,32 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     this.slump(400);
   };
 
+  /* one 256px grain-and-pebble tile, drawn once and shared by every scene */
+  var tile = null;
+  function grainTile(){
+    if (tile) return tile;
+    var T = 256; tile = document.createElement('canvas'); tile.width = tile.height = T;
+    var x = tile.getContext('2d');
+    var cols = ['rgba(40,26,14,.55)', 'rgba(150,112,72,.5)', 'rgba(30,20,12,.35)', 'rgba(176,140,98,.35)'];
+    for (var i = 0, N = T * T / 9; i < N; i++) {
+      x.fillStyle = cols[i & 3];
+      x.fillRect(Math.random() * T, Math.random() * T, Math.random() < .8 ? 1 : 2, Math.random() < .8 ? 1 : 2);
+    }
+    for (i = 0, N = T * T / 1400; i < N; i++) {   // pebbles with body; drawn 9 times so they wrap across tile edges
+      var px = Math.random() * T, py = Math.random() * T, rx = 1.5 + Math.random() * 3.5, ry = rx * (.55 + Math.random() * .3), rot = Math.random();
+      var tone = Math.random() < .5 ? [138, 126, 110] : [124, 96, 70];
+      for (var ox = -T; ox <= T; ox += T) for (var oy = -T; oy <= T; oy += T) {
+        var cx = px + ox, cy = py + oy; if (cx < -8 || cx > T + 8 || cy < -8 || cy > T + 8) continue;
+        var pg = x.createRadialGradient(cx - rx * .3, cy - ry * .4, .2, cx, cy, rx);
+        pg.addColorStop(0, 'rgb(' + (tone[0] + 18) + ',' + (tone[1] + 15) + ',' + (tone[2] + 12) + ')');
+        pg.addColorStop(1, 'rgb(' + (tone[0] - 50) + ',' + (tone[1] - 50) + ',' + (tone[2] - 46) + ')');
+        x.fillStyle = 'rgba(25,16,9,.35)'; x.beginPath(); x.ellipse(cx + .8, cy + 1, rx, ry, 0, 0, 7); x.fill();
+        x.fillStyle = pg; x.beginPath(); x.ellipse(cx, cy, rx, ry, rot, 0, 7); x.fill();
+      }
+    }
+    return tile;
+  }
+
   Scene.prototype.texture = function(){
     var W = this.W, H = this.H, d = this.dpr, t = document.createElement('canvas');
     t.width = W * d; t.height = H * d;
@@ -462,20 +510,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     var gr = x.createLinearGradient(0, 0, 0, H);
     gr.addColorStop(0, '#80583a'); gr.addColorStop(.35, '#6a4629'); gr.addColorStop(.75, '#4f3522'); gr.addColorStop(1, '#3d2a1b');
     x.fillStyle = gr; x.fillRect(0, 0, W, H);
-    var cols = ['rgba(40,26,14,.55)', 'rgba(150,112,72,.5)', 'rgba(30,20,12,.35)', 'rgba(176,140,98,.35)'];
-    for (var i = 0, N = W * H / 9; i < N; i++) {
-      x.fillStyle = cols[i & 3];
-      x.fillRect(Math.random() * W, Math.random() * H, Math.random() < .8 ? 1 : 2, Math.random() < .8 ? 1 : 2);
-    }
-    for (i = 0, N = W * H / 1400; i < N; i++) {   // pebbles with body
-      var px = Math.random() * W, py = Math.random() * H, rx = 1.5 + Math.random() * 3.5, ry = rx * (.55 + Math.random() * .3);
-      var pg = x.createRadialGradient(px - rx * .3, py - ry * .4, .2, px, py, rx);
-      var tone = Math.random() < .5 ? [138, 126, 110] : [124, 96, 70];
-      pg.addColorStop(0, 'rgb(' + (tone[0] + 18) + ',' + (tone[1] + 15) + ',' + (tone[2] + 12) + ')');
-      pg.addColorStop(1, 'rgb(' + (tone[0] - 50) + ',' + (tone[1] - 50) + ',' + (tone[2] - 46) + ')');
-      x.fillStyle = 'rgba(25,16,9,.35)'; x.beginPath(); x.ellipse(px + .8, py + 1, rx, ry, 0, 0, 7); x.fill();
-      x.fillStyle = pg; x.beginPath(); x.ellipse(px, py, rx, ry, Math.random(), 0, 7); x.fill();
-    }
+    x.fillStyle = x.createPattern(grainTile(), 'repeat'); x.fillRect(0, 0, W, H);
     this.tex = t;
   };
 
@@ -490,7 +525,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     function hi(){ var bi = -1, bv = 5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v > bv) { bv = v; bi = i; } } return bi; }
     function lo(){ var bi = -1, bv = -5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v < bv) { bv = v; bi = i; } } return bi; }
     var near = function(){ return Math.abs(s.bx - a.tx) < 6 && Math.abs(s.by - a.ty) < 6; };
-    var lift = Math.max(r * 1.3, H - g - this.r * 4.2);
+    var lift = Math.max(r * 1.3 + (this.opt.top || 0), H - g - this.r * 4.2);
     switch (a.st) {
       case 'seek':
         var i = hi();
@@ -504,7 +539,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       case 'up':
         if (near() || a.t > 1.2) {
           var j = lo();
-          a.tx = j >= 0 ? j * cw : (a.dir > 0 || this.clearX ? W + r * 3 : -r * 3);
+          a.tx = j >= 0 ? j * cw : (a.dir > 0 || this.clearX ? W + r * .6 : -r * .6);
           a.ty = j >= 0 ? Math.min(H - this.h[j] - r * 2.2, lift) : lift;
           a.st = 'carry'; a.t = 0;
         }
@@ -512,8 +547,8 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       case 'carry': if (near() || a.t > 3) { a.st = 'dump'; a.t = 0; } break;
       case 'dump':
         this.dumping = true;
-        if (this.bx < 0 || this.bx > W) this.load = 0;    // tipped onto the truck, off screen
-        if (this.load <= 1 || a.t > 3) { this.dumping = false; a.st = 'seek'; a.t = 0; this.load = this.bx < 0 || this.bx > W ? 0 : this.load; }
+        if (this.bx < r || this.bx > W - r) { this.load = Math.max(0, this.load - this.cap * 2 * dt); this.grains.length = Math.min(this.grains.length, this.maxGrains); }   // tipped onto the truck at the edge
+        if (this.load <= 1 || a.t > 3) { this.dumping = false; a.st = 'seek'; a.t = 0; }
         break;
       case 'fetch':
         if (near() || a.t > 3) {
@@ -542,7 +577,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     } else {
       target = { x: this.bx, y: this.by };
     }
-    target.y = Math.min(target.y, H - r * 1.4);
+    target.y = Math.min(Math.max(target.y, (this.opt.top || 0) + r * 1.8), H - r * 1.4);
     /* hydraulic follow */
     this.vx += (target.x - this.bx) * TUNE.SPRING * dt; this.vy += (target.y - this.by) * TUNE.SPRING * dt;
     var damp = Math.exp(-TUNE.DAMP * dt); this.vx *= damp; this.vy *= damp;
@@ -605,7 +640,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
         if (d > ms) { t = (d - ms) * .3; h[a] -= t; h[a + 1] += t; }
         else if (d < -ms) { t = (-d - ms) * .3; h[a] += t; h[a + 1] -= t; }
       }
-      for (k = 1, a = h[0]; k < n - 1; k++) { var cur = h[k]; h[k] += (a + h[k + 1] - 2 * cur) * .06; a = cur; }
+      for (k = 1, a = h[0]; k < n - 1; k++) { var cur = h[k]; h[k] += (a + h[k + 1] - 2 * cur) * .11; a = cur; }
     }
   };
 
@@ -708,11 +743,12 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
 
   ['dirtHero', 'dirtClose'].forEach(function(id){
     var c = document.getElementById(id); if (!c || !c.getContext) return;
-    var s = new Scene(c, { copy: id === 'dirtHero' ? document.querySelector('.hero-copy') : null }); scenes.push(s); s.resize();
+    var s = new Scene(c, id === 'dirtHero' ? { copy: document.querySelector('.hero-copy') } : { top: -parseFloat(getComputedStyle(c.parentNode).marginTop) || 0 }); scenes.push(s); s.resize();
     if (reduce) { s.draw(0); return; }
     if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ s.visible = es[0].isIntersecting; if (s.visible) kick(); }).observe(c);
   });
-  window.addEventListener('resize', function(){ scenes.forEach(function(s){ s.resize(); if (reduce) s.draw(0); }); });
+  var rz = 0;
+  window.addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ scenes.forEach(function(s){ s.resize(); if (reduce) s.draw(0); }); }, 120); });
   kick();
   window.__dirt = scenes;
 })();
