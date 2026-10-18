@@ -34,7 +34,7 @@
 }
 *{box-sizing:border-box}
 html{overscroll-behavior-y:none;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--site);color:var(--cream);font:400 17px/1.55 var(--font);caret-color:var(--yellow)}
+body{margin:0;background:var(--site);color:var(--cream);font:400 16px/1.55 var(--font);caret-color:var(--yellow)}
 ::selection{background:var(--yellow);color:var(--ink)}
 a{color:inherit;text-underline-offset:3px}
 img{max-width:100%;display:block}
@@ -71,11 +71,12 @@ h2{font-size:clamp(2rem,8.5vw,3.6rem);margin-bottom:28px}
 .hero-copy a{pointer-events:auto}
 .hero h1{font-size:clamp(2.75rem,13.2vw,6rem);max-width:11ch}
 .hero h1 em{font-style:normal;color:var(--yellow)}
-.promise{font-size:clamp(1.02rem,4.4vw,1.25rem);line-height:1.45;color:var(--cream-dim);max-width:34ch;margin:16px 0 22px}
+.promise{font-size:clamp(1rem,4.4vw,1.25rem);line-height:1.45;color:var(--cream-dim);max-width:34ch;margin:16px 0 22px}
 .actions{display:grid;gap:12px}
 .dirt-hero{position:relative;height:clamp(210px,30svh,250px);margin-top:4px}
 canvas.dirt{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab}
 canvas.dirt:active{cursor:grabbing}
+#dirtClose{touch-action:pan-y}
 .dirt-hero .still,.dirt-close .still{position:absolute;inset:auto 0 0;height:58%;background:linear-gradient(#6e4a2c,var(--soil));
   clip-path:polygon(0 30%,12% 18%,26% 34%,40% 8%,55% 30%,70% 22%,84% 40%,100% 20%,100% 100%,0 100%)}
 .dirt.ready+.still{display:none}
@@ -86,7 +87,7 @@ canvas.dirt:active{cursor:grabbing}
 .svc{list-style:none;margin:0;padding:0}
 .svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)}
 .svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;
-  border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:clamp(1.1rem,4.8vw,1.4rem);letter-spacing:-.01em}
+  border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);color:var(--cream);transition:background .15s,color .15s}
 .arrow svg{width:18px;height:18px}
 .svc a:hover,.svc a:focus-visible{outline:none;background:none;box-shadow:none}
@@ -95,7 +96,7 @@ canvas.dirt:active{cursor:grabbing}
 .svc-note{color:var(--cream-dim);margin:14px 0 0;font-size:1rem}
 
 .who{display:grid;gap:26px;margin-top:52px}
-.who h3{font-size:1.35rem;color:var(--yellow);margin-bottom:8px}
+.who h3{font-size:1.6rem;color:var(--yellow);margin-bottom:8px}
 .who p{margin:0;color:var(--cream-dim);max-width:40ch}
 
 /* how + estimate */
@@ -103,9 +104,9 @@ canvas.dirt:active{cursor:grabbing}
 .steps{list-style:none;margin:0 0 44px;padding:0;display:grid;gap:22px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s}
 .steps li::before{content:counter(s);font-weight:900;font-size:2.4rem;line-height:.9;color:var(--yellow);text-align:center}
-.steps b{display:block;font-size:1.12rem;line-height:1.32;padding-top:2px}
+.steps b{display:block;font-size:1.25rem;line-height:1.32;padding-top:2px}
 .steps span{color:var(--cream-dim);font-size:1rem}
-.area{margin:0 0 40px;font-size:1.05rem;color:var(--cream-dim)}
+.area{margin:0 0 40px;font-size:1rem;color:var(--cream-dim)}
 .area b{color:var(--cream)}
 
 /* strata seam between soil layers */
@@ -113,7 +114,7 @@ canvas.dirt:active{cursor:grabbing}
 
 /* ---------- form ---------- */
 .estimate{background:rgba(29,26,18,.28);border-radius:18px;padding:22px 18px 24px}
-.estimate h3{font-size:1.6rem;margin-bottom:6px}
+.estimate h3{font-size:2rem;margin-bottom:6px}
 .estimate .sub{margin:0 0 20px;color:var(--cream-dim);font-size:1rem}
 .field{display:block;margin-bottom:18px}
 .field>span,.legend{display:block;font-weight:700;margin-bottom:8px;font-size:1rem}
@@ -129,7 +130,7 @@ legend{padding:0}
 .chip{position:relative}
 .chip input{position:absolute;opacity:0;width:1px;height:1px}
 .chip span{display:flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);
-  font-size:.95rem;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
+  font-size:1rem;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
 .chip span:hover,.chip input:focus-visible+span{border-color:var(--laser)}
 .chip input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
 .chip input:checked+span:hover{border-color:var(--laser)}
@@ -140,7 +141,7 @@ legend{padding:0}
 .handoff{margin:12px 0 0;font-size:1rem;color:var(--cream-dim)}
 .composed{margin-top:18px;padding:16px;border-radius:12px;background:rgba(244,236,218,.07)}
 .composed p{margin:0 0 10px;font-size:1rem}
-.composed pre{margin:0 0 12px;white-space:pre-wrap;font:15px/1.5 var(--font);color:var(--cream);user-select:all;-webkit-user-select:all}
+.composed pre{margin:0 0 12px;white-space:pre-wrap;font:1rem/1.5 var(--font);color:var(--cream);user-select:all;-webkit-user-select:all}
 .copy{min-height:44px;padding:0 16px;border-radius:10px;border:2px solid rgba(244,236,218,.3);background:none;color:var(--cream);font:700 1rem var(--font);cursor:pointer}
 .copy:hover,.copy:focus-visible{border-color:var(--laser);outline:none}
 
@@ -155,7 +156,7 @@ legend{padding:0}
 .close{background:var(--soil);padding:18px 0 60px;text-align:left}
 .close .fb{margin-bottom:56px}
 .close h2{margin-bottom:14px}
-.close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.08rem}
+.close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.25rem}
 .close .actions{max-width:420px}
 .close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;text-decoration:none}
 .close .num:hover{color:var(--yellow)}
@@ -174,14 +175,14 @@ footer nav{display:flex;flex-wrap:wrap;column-gap:22px}
   .who{grid-template-columns:1fr 1fr;gap:40px}
   .estimate{padding:32px}
   .top{padding-top:22px}
-  .brand b{font-size:1.15rem}
-  .top .phone{font-size:1.15rem}
+  .brand b{font-size:1.25rem}
+  .top .phone{font-size:1.25rem}
 }
 @media (min-width:1024px){
   .hero{min-height:min(92svh,900px)}
   .hero-copy{padding-top:70px}
   .hero h1{max-width:12ch}
-  .promise{font-size:1.25rem;max-width:40ch}
+  .promise{max-width:40ch}
   .dirt-hero{position:absolute;inset:0;height:auto;margin:0}
   .hero-copy{padding-bottom:260px}
   .services{padding:64px 0 84px}
@@ -189,7 +190,10 @@ footer nav{display:flex;flex-wrap:wrap;column-gap:22px}
   .who{grid-template-columns:1fr;margin-top:0;padding-top:58px}
   .how-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
   .how{padding:52px 0 90px}
+  .how-grid>div:first-child{position:sticky;top:32px}
   .proof{padding-top:84px}
+  .photo{max-width:none}
+  .photo img{aspect-ratio:16/9;object-fit:cover;object-position:50% 72%}
   .dirt-close{height:190px;margin-top:-80px}
   .close{padding-bottom:80px}
 }
@@ -207,7 +211,8 @@ STORY: surface (who and what) → dig in (the work) → how to get an estimate (
   description) → proof (the graded lot from his own post) → close.
 FIRST VIEWPORT (phone): name + number top right; "Let me handle the dirty work."; one promise line; two buttons
   (text photos / estimate form); the dirt bank with the excavator bucket grading it to the laser line.
-FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-repose slumping, flying grains,
+FORM: (no concept roll or seed: unattended pitch-site build, world chosen from the trade per the house rules)
+  system sans, heavy uppercase display; soil drawn on canvas with angle-of-repose slumping, flying grains,
   a bucket that follows finger or mouse, digs, carries and dumps, and grades by itself when left alone.
 -->
 <header class="hero">
@@ -307,7 +312,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
   <div class="wrap">
     <h2 id="proofH">Recent work</h2>
     <div class="photo">
-      <img src="img/work-01.webp" srcset="img/work-01.webp 960w, img/work-01-1520.webp 1520w" sizes="(min-width:800px) 760px, calc(100vw - 40px)" width="960" height="901" loading="lazy" decoding="async" draggable="false"
+      <img src="img/work-01.webp" srcset="img/work-01.webp 960w, img/work-01-1520.webp 1520w" sizes="(min-width:1024px) 1108px, (min-width:800px) 760px, calc(100vw - 40px)" width="960" height="901" loading="lazy" decoding="async" draggable="false"
         alt="A cleared and graded lot with a Bobcat mini excavator, a tracked loader and a laser level on a tripod">
     </div>
   </div>
@@ -364,7 +369,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     if (jobs.length) lines.push('Job: ' + jobs.join(', '));
     lines.push('Location: ' + loc);
     lines.push('Work: ' + desc);
-    lines.push('Pictures attached.');
+    lines.push("I'll attach pictures.");
     var msg = lines.join('\n');
     /* computers often can't open a text, so the written message stays on screen to copy or retype */
     document.getElementById('composed').hidden = false;
@@ -404,7 +409,9 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     DAMP: 13,
     IDLE_MS: 2600,      // hand back to autoplay after this long untouched
     GRAIN_VOL: 5,       // px^2 of soil per flying grain
-    LASER_SPEED: 0.55   // laser sweeps per second
+    DIG_TILT: -.55,     // bucket angles: teeth down in the soil, curled to carry, tipped to dump
+    CARRY_TILT: .22,
+    DUMP_TILT: -2.1
   };
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   var scenes = [];
@@ -414,10 +421,15 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     this.W = 0; this.H = 0; this.visible = true;
     this.grains = []; this.load = 0; this.tilt = 0; this.facing = -1;
     this.bx = 0; this.by = 0; this.vx = 0; this.vy = 0;
-    this.ptr = null; this.lastTouch = -1e9; this.still = 0;
+    this.ptr = null; this.lastTouch = -1e9; this.still = 0; this.show = this.opt.auto === false ? 0 : 1;
     this.auto = { st: 'seek', t: 0, tx: 0, ty: 0, dir: 1, refill: 0 };
     var s = this;
-    function setPtr(e){ s.ptr = { x: e.clientX, y: e.clientY, down: e.buttons > 0 || e.pointerType !== 'mouse' }; s.lastTouch = performance.now(); }
+    function setPtr(e){
+      var rc = canvas.getBoundingClientRect(), lx = e.clientX - rc.left, ly = e.clientY - rc.top;
+      if (s.clearX && lx < s.clearX && ly < s.H - s.clearH) { s.ptr = null; canvas.style.cursor = 'default'; return; }   // behind the headline: not dirt
+      canvas.style.cursor = '';
+      s.ptr = { x: e.clientX, y: e.clientY }; s.lastTouch = performance.now();
+    }
     canvas.addEventListener('pointerdown', function(e){ e.preventDefault(); try{ canvas.setPointerCapture(e.pointerId); }catch(_){} setPtr(e); });
     canvas.addEventListener('pointermove', setPtr);
     canvas.addEventListener('pointerup', function(e){ if (e.pointerType !== 'mouse') s.ptr = null; s.lastTouch = performance.now(); });
@@ -450,6 +462,9 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       }
       if (bottom - r.top > 0) { this.clearX = right - r.left + 40; this.clearH = H - (bottom - r.top) - 40; }
     }
+    /* the bank under the work photo buries the photo's bottom edge */
+    this.photoY = 0;
+    if (this.opt.photo) { this.photoY = this.opt.photo.getBoundingClientRect().bottom - r.top; this.grade = H - this.photoY + 14; }
     this.rep = new Float32Array(this.n);
     for (var q2 = 0, v = 1; q2 < this.n; q2++) { v += (Math.random() - .5) * .35; v = Math.max(.85, Math.min(1.15, v)); this.rep[q2] = v; }
     this.maxGrains = phone ? 500 : 1100;
@@ -462,19 +477,28 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
 
   Scene.prototype.profile = function(){
     var H = this.H, g = this.grade, n = this.n, cw = this.cw, W = this.W;
-    var x0 = this.clearX, span = W - x0, bumps = [], k = this.clearX ? 3 : 2, unit = Math.min(H, 260);
-    for (var b = 0; b < k; b++) bumps.push({ x: x0 + (b + .5 + (Math.random() - .5) * .5) / k * span, a: unit * (.16 + Math.random() * .14), w: Math.max(30, span * (.05 + Math.random() * .05)) });
-    if (this.clearX) bumps.push({ x: x0 + span * .6, a: H * .5, w: span * .22 });   // the spoil pile
+    var x0 = this.clearX, span = W - x0, bumps = [], k = this.clearX ? 3 : 2, unit = Math.min(H, 260) * (this.photoY ? .35 : 1);
+    for (var b = 0; b < k; b++) {
+      var ba = unit * (.16 + Math.random() * .14);
+      bumps.push({ x: x0 + (b + .5 + (Math.random() - .5) * .5) / k * span, a: ba, w: Math.max(ba * 2.2, span * (.05 + Math.random() * .05)) });   // wide enough to never slump into a cone
+    }
+    if (this.clearX) bumps.push({ x: x0 + span * .6, a: H * .3, w: span * .2 });   // the spoil pile
     var trench = { x: x0 + Math.random() * span, w: Math.max(24, span * .04) };
+    if (this.photoY) trench.w = 0;
     var seed = Math.random() * 10;
     for (var i = 0; i < n; i++) {
       var x = i * cw, y = g + Math.sin(x * .013 + seed) * unit * .03 + Math.sin(x * .041 + seed * 3) * unit * .012;
       for (b = 0; b < bumps.length; b++) { var d = (x - bumps[b].x) / bumps[b].w; y += bumps[b].a * Math.exp(-d * d); }
-      var t = (x - trench.x) / trench.w; y -= unit * .1 * Math.exp(-t * t * t * t);
+      if (trench.w) { var t = (x - trench.x) / trench.w; y -= unit * .1 * Math.exp(-t * t * t * t); }
       if (x < this.clearX) y = Math.min(y, this.clearH);
       this.h[i] = Math.max(8, Math.min(H - 6, y));
     }
-    this.slump(400);
+    /* level the average to a little above grade, so there are mounds to cut and dips to fill */
+    var i0 = Math.ceil(x0 / cw), sum = 0;
+    for (i = i0; i < n; i++) sum += this.h[i];
+    var shift = sum / (n - i0) - (g + (this.clearX ? H * .1 : unit * .06));
+    for (i = i0; i < n; i++) this.h[i] = Math.max(8, this.h[i] - shift);
+    this.slump(1500);
   };
 
   /* one 256px grain-and-pebble tile, drawn once and shared by every scene */
@@ -511,56 +535,52 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     gr.addColorStop(0, '#80583a'); gr.addColorStop(.35, '#6a4629'); gr.addColorStop(.75, '#4f3522'); gr.addColorStop(1, '#3d2a1b');
     x.fillStyle = gr; x.fillRect(0, 0, W, H);
     x.fillStyle = x.createPattern(grainTile(), 'repeat'); x.fillRect(0, 0, W, H);
+    var fade = x.createLinearGradient(0, H * .78, 0, H);
+    fade.addColorStop(0, 'rgba(61,42,27,0)'); fade.addColorStop(1, 'rgba(61,42,27,1)');
+    x.fillStyle = fade; x.fillRect(0, H * .78, W, H * .22);
     this.tex = t;
   };
 
   Scene.prototype.col = function(x){ return Math.max(0, Math.min(this.n - 1, Math.round(x / this.cw))); };
   Scene.prototype.surf = function(x){ return this.H - this.h[this.col(x)]; };
 
-  /* --- autoplay: grade the high spots to the laser, fill the low spots, fetch more dirt when it's level --- */
+  /* --- autoplay: cut the high spots to the laser grade and fill the low spots; once it's level, dig a trench and heap
+         the spoil beside it, which gives the next round something to grade. The bucket never leaves the screen. --- */
   Scene.prototype.autoplay = function(dt){
     var a = this.auto, H = this.H, W = this.W, g = this.grade, r = this.r, cw = this.cw, s = this;
     a.t += dt;
-    var i0 = Math.max(4, Math.ceil(this.clearX / cw) + 2);
+    var i0 = Math.max(4, Math.ceil(this.clearX / cw) + 2), xMin = this.clearX + r * 1.5, xMax = W - r * 1.5;
     function hi(){ var bi = -1, bv = 5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v > bv) { bv = v; bi = i; } } return bi; }
     function lo(){ var bi = -1, bv = -5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v < bv) { bv = v; bi = i; } } return bi; }
     var near = function(){ return Math.abs(s.bx - a.tx) < 6 && Math.abs(s.by - a.ty) < 6; };
-    var lift = Math.max(r * 1.3 + (this.opt.top || 0), H - g - this.r * 4.2);
+    var lift = H - g - r * 4.2;
     switch (a.st) {
       case 'seek':
         var i = hi();
-        if (i < 0) { a.st = 'fetch'; a.dir = this.clearX || Math.random() < .5 ? 1 : -1; a.tx = a.dir < 0 && !this.clearX ? -r * 3 : W + r * 3; a.ty = lift; break; }
-        a.dir = (i * cw > (W + this.clearX) / 2) ? -1 : 1;
-        a.tx = i * cw - a.dir * r * 2.5; a.ty = Math.min(this.surf(a.tx) - r * 1.2, lift); a.st = 'go'; a.t = 0;
+        a.deep = i < 0;
+        if (a.deep) { a.dir = Math.random() < .5 ? -1 : 1; a.tx = xMin + r * 3 + Math.random() * Math.max(0, xMax - xMin - r * 6); }
+        else { a.dir = (i * cw > (W + this.clearX) / 2) ? -1 : 1; a.tx = i * cw - a.dir * r * 2.5; }
+        a.ty = Math.min(this.surf(a.tx) - r * 1.2, lift); a.st = 'go'; a.t = 0;
         break;
-      case 'go': if (near() || a.t > 2.5) { a.st = 'plunge'; a.ty = H - g - r * .4 - r * .9 + 2; a.t = 0; } break;
-      case 'plunge': if (near() || a.t > 1.2) { a.st = 'drag'; a.tx += a.dir * r * 6; a.t = 0; } break;
-      case 'drag': if (near() || this.load >= this.cap * .98 || a.t > 2.2) { a.st = 'up'; a.tx = this.bx; a.ty = lift; a.t = 0; } break;
+      case 'go': if (near() || a.t > 2.5) { a.st = 'plunge'; a.ty = H - g - r * (a.deep ? .5 : 1.3) + 2; a.t = 0; } break;
+      case 'plunge': if (near() || a.t > 1.2) { a.st = 'drag'; a.tx += a.dir * r * (a.deep ? 3.5 : 6); a.t = 0; } break;
+      case 'drag': if (near() || this.load >= this.cap * .98 || a.t > 2.2) { a.st = 'up'; a.tx = this.bx; a.ty = Math.min(this.surf(this.bx) - r * 2.4, lift); a.t = 0; } break;
       case 'up':
-        if (near() || a.t > 1.2) {
-          var j = lo();
-          a.tx = j >= 0 ? j * cw : (a.dir > 0 || this.clearX ? W + r * .6 : -r * .6);
-          a.ty = j >= 0 ? Math.min(H - this.h[j] - r * 2.2, lift) : lift;
+        if (near() || a.t > 1.4) {
+          var j = a.deep ? -1 : lo();
+          if (j >= 0) a.tx = j * cw;
+          else { a.tx = this.bx + a.dir * r * 5; if (a.tx > xMax || a.tx < xMin) a.tx = this.bx - a.dir * r * 5; }
+          a.ty = Math.min(this.surf(a.tx) - r * 2.4, lift);
           a.st = 'carry'; a.t = 0;
         }
         break;
       case 'carry': if (near() || a.t > 3) { a.st = 'dump'; a.t = 0; } break;
       case 'dump':
         this.dumping = true;
-        if (this.bx < r || this.bx > W - r) { this.load = Math.max(0, this.load - this.cap * 2 * dt); this.grains.length = Math.min(this.grains.length, this.maxGrains); }   // tipped onto the truck at the edge
         if (this.load <= 1 || a.t > 3) { this.dumping = false; a.st = 'seek'; a.t = 0; }
         break;
-      case 'fetch':
-        if (near() || a.t > 3) {
-          this.load = this.cap; a.refill = (a.refill || 0) + 1;
-          a.tx = this.clearX + (W - this.clearX) * (.2 + Math.random() * .6); a.ty = Math.min(lift, H - g - r * 3.6); a.st = 'carry'; a.t = 0;
-        }
-        break;
     }
-    if (a.st === 'carry' && a.refill && this.load >= this.cap * .9 && near()) { a.st = 'dump'; a.t = 0; }
-    if (a.st === 'seek' && a.refill && a.refill < 3 && hi() >= 0 && this.load <= 1 && Math.random() < .6) { a.st = 'fetch'; a.tx = a.dir < 0 && !this.clearX ? -r * 3 : W + r * 3; a.ty = lift; }
-    if (a.st === 'seek' && a.refill >= 3) a.refill = 0;
-    return { x: a.tx, y: a.ty };
+    return { x: Math.max(xMin, Math.min(xMax, a.tx)), y: a.ty };
   };
 
   Scene.prototype.step = function(dt, now){
@@ -572,12 +592,13 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
       target = { x: this.ptr.x - rect.left, y: this.ptr.y - rect.top - r * .5 };
       this.dumping = false;
       this.auto.st = 'seek';
-    } else if (now - this.lastTouch > TUNE.IDLE_MS) {
+    } else if (this.opt.auto !== false && now - this.lastTouch > TUNE.IDLE_MS) {
       target = this.autoplay(dt);
     } else {
       target = { x: this.bx, y: this.by };
     }
-    target.y = Math.min(Math.max(target.y, (this.opt.top || 0) + r * 1.8), H - r * 1.4);
+    target.y = Math.min(Math.max(target.y, r * 1.2), H - r * 1.4);
+    this.show += ((user || this.opt.auto !== false ? 1 : 0) - this.show) * Math.min(1, dt * 4);   // the photo's bank only shows the bucket while you dig
     /* hydraulic follow */
     this.vx += (target.x - this.bx) * TUNE.SPRING * dt; this.vy += (target.y - this.by) * TUNE.SPRING * dt;
     var damp = Math.exp(-TUNE.DAMP * dt); this.vx *= damp; this.vy *= damp;
@@ -590,7 +611,8 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     var cx = this.bx, cy = this.by + r * .4, rr = r * .9;
     var airborne = cy + rr < this.surf(cx) - 2;
     if (user) { this.still = (sp < 70 && airborne) ? this.still + dt : 0; this.dumping = this.still > .35; }
-    this.tilt += ((this.dumping && airborne ? 1.15 : 0) - this.tilt) * Math.min(1, dt * 7);
+    var tt = this.dumping && airborne ? TUNE.DUMP_TILT : (!airborne ? TUNE.DIG_TILT : (this.load > this.cap * .2 ? TUNE.CARRY_TILT : 0));
+    this.tilt += (tt - this.tilt) * Math.min(1, dt * 6);
 
     /* dig: soil above the bucket's lip comes out; what doesn't fit is shoved ahead */
     if (!this.dumping) {
@@ -599,9 +621,12 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
         var dx = i * cw - cx; if (Math.abs(dx) >= rr) continue;
         var floorY = cy + Math.sqrt(rr * rr - dx * dx), nh = H - floorY;
         if (nh < h[i]) {
-          var area = (h[i] - nh) * cw, take = Math.min(area, this.cap - this.load);
+          var area = (h[i] - nh) * cw;
+          if (area > TUNE.GRAIN_VOL && Math.random() < .25 && this.grains.length < this.maxGrains) {   // a clod kicked up by the teeth
+            this.grain(i * cw, H - nh, this.vx * .5 + (Math.random() - .5) * 80, -80 - Math.random() * 140); area -= TUNE.GRAIN_VOL;
+          }
+          var take = Math.min(area, this.cap - this.load);
           this.load += take; pushed += area - take; h[i] = Math.max(4, nh);
-          if (Math.random() < .25 && this.grains.length < this.maxGrains) this.grain(i * cw, H - nh, this.vx * .5 + (Math.random() - .5) * 80, -80 - Math.random() * 140);
         }
       }
       if (pushed > 0) {
@@ -613,7 +638,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     if (this.load > 0 && airborne) {
       var rate = this.dumping ? this.cap * 1.7 : (sp > 300 ? this.cap * .12 : this.cap * .02);
       var amt = Math.min(this.load, rate * dt), count = Math.floor(amt / TUNE.GRAIN_VOL + Math.random());
-      var mx = this.bx - this.facing * r * (this.dumping ? .2 : .8), my = this.by + r * (this.dumping ? 1.3 : .3);
+      var mp = this.local(-.1, -.02), mx = mp.x, my = mp.y + (this.dumping ? r * .4 : 0);   // the bucket's mouth
       for (i = 0; i < count && this.grains.length < this.maxGrains; i++)
         this.grain(mx + (Math.random() - .5) * r * .9, my + Math.random() * 4, this.vx * .6 + (Math.random() - .5) * 40, this.vy * .4 + Math.random() * 40);
       this.load -= count * TUNE.GRAIN_VOL; if (this.load < 0) this.load = 0;
@@ -644,11 +669,18 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     }
   };
 
+  /* a point on the bucket (in bucket units) to canvas coordinates, matching drawBucket's transform */
+  Scene.prototype.local = function(lx, ly){
+    var s = this.r * 2.1, c = Math.cos(this.tilt), sn = Math.sin(this.tilt);
+    var rx = (lx * c - ly * sn) * s, ry = (lx * sn + ly * c) * s;
+    return { x: this.bx - this.facing * rx, y: this.by - this.r * .55 + ry };
+  };
+
   Scene.prototype.grain = function(x, y, vx, vy){
     this.grains.push({ x: x, y: y, vx: vx, vy: vy, s: Math.random() < .7 ? 1.6 : 2.6, c: (Math.random() * 3) | 0 });
   };
 
-  var GRAIN_COLORS = ['#6d4a2d', '#8c6542', '#4a3220'];
+  var GRAIN_COLORS = ['#8c6542', '#a47a52', '#6d4a2d'];
 
   Scene.prototype.draw = function(now){
     var x = this.ctx, W = this.W, H = this.H, h = this.h, cw = this.cw, n = this.n, r = this.r, i;
@@ -666,13 +698,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     x.lineWidth = 22; x.strokeStyle = 'rgba(52,34,19,.18)'; x.stroke();
     x.restore();
 
-    /* grade laser: the line, and the rotating beam's bright spot */
-    var gy = H - this.grade;
-    x.fillStyle = 'rgba(255,90,69,.38)'; x.fillRect(0, gy - .5, W, 1);
-    var lx = ((now / 1000 * TUNE.LASER_SPEED) % 1) * (W + 80) - 40;
-    var lg = x.createRadialGradient(lx, gy, 0, lx, gy, 14);
-    lg.addColorStop(0, 'rgba(255,215,200,.95)'); lg.addColorStop(.25, 'rgba(255,90,69,.7)'); lg.addColorStop(1, 'rgba(255,90,69,0)');
-    x.fillStyle = lg; x.fillRect(lx - 14, gy - 14, 28, 28);
+    if (this.opt.laser !== false) this.drawLaser(x, now);
 
     /* grains */
     var G = this.grains;
@@ -681,21 +707,71 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
     this.drawBucket(x);
   };
 
+  /* rotary laser on a tripod at the far end, like the one in his photo; the beam runs toward the work and stops
+     at the first soil face (or the bucket) it hits */
+  Scene.prototype.drawLaser = function(x, now){
+    var W = this.W, H = this.H, gy = H - this.grade, tx = W - (W < 700 ? 24 : 40), foot = this.surf(tx);
+    var endX = 0, hitBucket = Math.abs(this.by + this.r * .4 - gy) < this.r * 1.1 && this.bx < tx;
+    for (var i = this.col(tx) - 3; i >= 0; i--) {
+      var X = i * this.cw;
+      if (hitBucket && X <= this.bx + this.r * .7) { endX = this.bx + this.r * .7; break; }
+      if (H - this.h[i] < gy - .5) { endX = X; break; }
+    }
+    x.strokeStyle = 'rgba(255,90,69,.55)'; x.lineWidth = 1.2;
+    x.beginPath(); x.moveTo(tx - 4, gy); x.lineTo(endX, gy); x.stroke();
+    if (endX > 0) {
+      var sg = x.createRadialGradient(endX, gy, 0, endX, gy, 6);
+      sg.addColorStop(0, 'rgba(255,220,205,1)'); sg.addColorStop(.4, 'rgba(255,90,69,.85)'); sg.addColorStop(1, 'rgba(255,90,69,0)');
+      x.fillStyle = sg; x.fillRect(endX - 6, gy - 6, 12, 12);
+    }
+    /* tripod */
+    x.strokeStyle = '#c9ccce'; x.lineWidth = 1.6; x.lineCap = 'round';
+    if (foot > gy + 6) {
+      x.beginPath();
+      x.moveTo(tx, gy + 6); x.lineTo(tx - 9, foot + 1);
+      x.moveTo(tx, gy + 6); x.lineTo(tx + 9, foot + 1);
+      x.moveTo(tx, gy + 6); x.lineTo(tx + 1, foot + 1);
+      x.stroke();
+      x.fillStyle = '#e8432f'; x.fillRect(tx - 10.5, foot - 3, 3, 3); x.fillRect(tx + 7.5, foot - 3, 3, 3);
+    }
+    /* head: yellow body, dark window, blinking emitter */
+    x.fillStyle = '#e9ad06'; x.beginPath(); x.roundRect(tx - 6, gy - 7, 12, 13, 2); x.fill();
+    x.fillStyle = '#2b2b28'; x.fillRect(tx - 5, gy - 2, 10, 4);
+    var blink = (now / 1000 * 10) % 1 < .5;
+    x.fillStyle = blink ? '#ffd2c8' : '#ff5a45'; x.fillRect(tx - 5, gy - .8, 2.5, 1.6);
+  };
+
   /* side view of a digging bucket: steel side plate, cutting edge and tooth, pins, a stub of yellow stick */
   Scene.prototype.drawBucket = function(x){
-    var s = this.r * 2.1, f = this.facing;
-    x.save();
+    if (this.show < .02) return;
+    var s = this.r * 2.1, f = this.facing, r = this.r;
+    x.save(); x.globalAlpha = this.show;
+    /* contact shadow on the soil, softer the higher the bucket */
+    var sy = this.surf(this.bx), lift = Math.max(0, sy - (this.by + r));
+    var sa = .32 * Math.max(0, 1 - lift / (r * 5));
+    if (sa > .01) { x.fillStyle = 'rgba(20,12,6,' + sa.toFixed(3) + ')'; x.beginPath(); x.ellipse(this.bx, sy + 1, s * .45 * (1 + lift / (r * 8)), s * .09, 0, 0, 7); x.fill(); }
+    /* stick: solid, out of the top of the dirt strip toward the machine, fading only in the last 28px */
+    var pin = this.local(.2, .1), front = this.local(-.28, .1);
+    var dxs = -f * .5, dys = -1, dl = Math.hypot(dxs, dys); dxs /= dl; dys /= dl;
+    var len = Math.min((pin.y + 40) / -dys, s * 3.4), top = { x: pin.x + dxs * len, y: pin.y + dys * len };
+    var fade = x.createLinearGradient(pin.x, pin.y, top.x, top.y), cut = Math.min(28, len * .3) / len;   // fades out where it leaves the strip, or after ~3 bucket lengths
+    fade.addColorStop(0, '#d39a00'); fade.addColorStop(1 - cut, '#d39a00'); fade.addColorStop(1, 'rgba(211,154,0,0)');
+    x.lineCap = 'butt';
+    x.strokeStyle = fade; x.lineWidth = s * .3;
+    x.beginPath(); x.moveTo(pin.x, pin.y); x.lineTo(top.x, top.y); x.stroke();
+    var shade = x.createLinearGradient(pin.x, pin.y, top.x, top.y);   // shading down one side of the stick
+    shade.addColorStop(0, 'rgba(120,84,0,.35)'); shade.addColorStop(1 - cut, 'rgba(120,84,0,.35)'); shade.addColorStop(1, 'rgba(120,84,0,0)');
+    x.strokeStyle = shade; x.lineWidth = s * .08;
+    x.beginPath(); x.moveTo(pin.x + f * s * .1, pin.y); x.lineTo(top.x + f * s * .1, top.y); x.stroke();
+    /* bucket cylinder: dark barrel from up the stick, bright rod down to the dogbone link at the front pin */
+    var cyl = { x: pin.x + dxs * s * 1.2 - f * s * .26, y: pin.y + dys * s * 1.2 };
+    var mid = { x: cyl.x + (front.x - cyl.x) * .55, y: cyl.y + (front.y - cyl.y) * .55 };
+    x.lineCap = 'round';
+    x.strokeStyle = '#2b2b28'; x.lineWidth = s * .13; x.beginPath(); x.moveTo(cyl.x, cyl.y); x.lineTo(mid.x, mid.y); x.stroke();
+    x.strokeStyle = '#c9ccce'; x.lineWidth = s * .06; x.beginPath(); x.moveTo(mid.x, mid.y); x.lineTo(front.x, front.y); x.stroke();
     x.translate(this.bx, this.by - this.r * .55);
     x.scale(-f, 1);                                   // the tooth leads in the direction of travel
     x.rotate(this.tilt);
-    /* stick + linkage, fading out up and back */
-    var sg = x.createLinearGradient(0, 0, s * .55, -s * 1.5);
-    sg.addColorStop(0, '#e9ad06'); sg.addColorStop(.6, 'rgba(233,173,6,.9)'); sg.addColorStop(1, 'rgba(233,173,6,0)');
-    x.save(); x.rotate(.35);
-    x.fillStyle = sg; x.beginPath(); x.roundRect(-s * .11, -s * 1.6, s * .26, s * 1.66, s * .06); x.fill();
-    x.restore();
-    x.strokeStyle = '#2b2b28'; x.lineWidth = s * .07; x.lineCap = 'round';
-    x.beginPath(); x.moveTo(-s * .26, s * .08); x.lineTo(-s * .05, -s * .32); x.stroke();
     /* load heaped in the mouth */
     if (this.load > 0) {
       var lf = Math.min(1, this.load / this.cap);
@@ -743,7 +819,7 @@ FORM: system sans, heavy uppercase display; soil drawn on canvas with angle-of-r
 
   ['dirtHero', 'dirtClose'].forEach(function(id){
     var c = document.getElementById(id); if (!c || !c.getContext) return;
-    var s = new Scene(c, id === 'dirtHero' ? { copy: document.querySelector('.hero-copy') } : { top: -parseFloat(getComputedStyle(c.parentNode).marginTop) || 0 }); scenes.push(s); s.resize();
+    var s = new Scene(c, id === 'dirtHero' ? { copy: document.querySelector('.hero-copy') } : { photo: document.querySelector('.photo img'), auto: false, laser: false }); scenes.push(s); s.resize();
     if (reduce) { s.draw(0); return; }
     if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ s.visible = es[0].isIntersecting; if (s.visible) kick(); }).observe(c);
   });
