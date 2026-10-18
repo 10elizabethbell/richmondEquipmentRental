@@ -58,14 +58,14 @@ h2{font-size:clamp(2rem,8.5vw,3.6rem);margin-bottom:28px}
 .top{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:6px}
 .brand{display:flex;flex-direction:column;line-height:1.05;text-decoration:none}
 .brand b{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem}
-.brand span{font-size:.8rem;color:var(--cream-dim);letter-spacing:.02em}
+.brand span{font-size:.875rem;color:var(--cream-dim);letter-spacing:.02em}
 .top .phone{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:800;font-size:1rem;text-decoration:none;white-space:nowrap;color:var(--cream)}
 .top .phone svg{width:18px;height:18px;color:var(--yellow)}
 .top .phone:hover{color:var(--yellow)}
 
 /* ---------- hero ---------- */
 .hero{position:relative;display:flex;flex-direction:column;overflow:hidden;
-  background:radial-gradient(120% 70% at 85% 0%,#24493f 0%,rgba(36,73,63,0) 60%),var(--site)}
+  background:linear-gradient(180deg,#1b3d34 0%,var(--site) 55%)}
 .hero>.wrap{width:100%}
 .hero-copy{position:relative;z-index:2;padding-top:26px;padding-bottom:6px;pointer-events:none}
 .hero-copy a{pointer-events:auto}
@@ -103,7 +103,7 @@ canvas.dirt:active{cursor:grabbing}
 .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s}
 .steps li::before{content:counter(s);display:grid;place-items:center;width:44px;height:44px;border-radius:50%;
   background:var(--yellow);color:var(--ink);font-weight:900;font-size:1.15rem}
-.steps b{display:block;font-size:1.12rem;line-height:1.25;padding-top:2px}
+.steps b{display:block;font-size:1.12rem;line-height:1.32;padding-top:2px}
 .steps span{color:var(--cream-dim);font-size:.98rem}
 .area{margin:0 0 40px;font-size:1.05rem;color:var(--cream-dim)}
 .area b{color:var(--cream)}
@@ -117,7 +117,7 @@ canvas.dirt:active{cursor:grabbing}
 .estimate .sub{margin:0 0 20px;color:var(--cream-dim);font-size:.98rem}
 .field{display:block;margin-bottom:18px}
 .field>span,.legend{display:block;font-weight:700;margin-bottom:8px;font-size:1rem}
-.field small{font-weight:400;color:var(--cream-dim)}
+.field small{font-weight:400;font-size:.9rem;color:var(--cream-dim)}
 .field input,.field textarea{width:100%;min-height:52px;padding:13px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);
   background:rgba(244,236,218,.06);color:var(--cream);font:16px/1.4 var(--font);transition:border-color .15s,background .15s}
 .field textarea{min-height:110px;resize:vertical}
@@ -151,7 +151,7 @@ fieldset{border:0;margin:0 0 18px;padding:0}
 .close h2{margin-bottom:14px}
 .close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.08rem}
 .close .actions{max-width:420px}
-.close .num{display:inline-block;margin-top:18px;font-weight:800;font-size:1.25rem;text-decoration:none}
+.close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;text-decoration:none}
 .close .num:hover{color:var(--yellow)}
 footer{background:var(--soil-deep);padding:34px 0 40px;font-size:.95rem;color:var(--cream-dim)}
 footer .wrap{display:grid;gap:10px}
