@@ -45,7 +45,7 @@ h2{font-size:clamp(2rem,8.5vw,3.6rem);margin-bottom:28px}
 
 /* ---------- buttons ---------- */
 .btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 16px;border-radius:12px;
-  font:800 clamp(.95rem,4.3vw,1.05rem)/1.1 var(--font);text-decoration:none;text-align:center;cursor:pointer;border:2px solid var(--yellow);
+  font:800 clamp(.95rem,4.3vw,1.05rem)/1.3 var(--font);text-decoration:none;text-align:center;cursor:pointer;border:2px solid var(--yellow);
   transition:background .15s,color .15s,transform .1s}
 .btn:active{transform:translateY(1px)}
 .btn-fill{background:var(--yellow);color:var(--ink);box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
@@ -56,7 +56,7 @@ h2{font-size:clamp(2rem,8.5vw,3.6rem);margin-bottom:28px}
 
 /* ---------- header ---------- */
 .top{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:6px}
-.brand{display:flex;flex-direction:column;line-height:1.05;text-decoration:none}
+.brand{display:flex;flex-direction:column;line-height:1.3;text-decoration:none}
 .brand b{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem}
 .brand span{font-size:.875rem;color:var(--cream-dim);letter-spacing:.02em}
 .top .phone{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:800;font-size:1rem;text-decoration:none;white-space:nowrap;color:var(--cream)}
@@ -87,7 +87,7 @@ canvas.dirt:active{cursor:grabbing}
 .svc{list-style:none;margin:0;padding:0}
 .svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)}
 .svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;
-  border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+  border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:1.25rem;line-height:1.35;letter-spacing:-.01em}
 .arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);color:var(--cream);transition:background .15s,color .15s}
 .arrow svg{width:18px;height:18px}
 .svc a:hover,.svc a:focus-visible{outline:none;background:none;box-shadow:none}
@@ -156,9 +156,9 @@ legend{padding:0}
 .close{background:var(--soil);padding:18px 0 60px;text-align:left}
 .close .fb{margin-bottom:56px}
 .close h2{margin-bottom:14px}
-.close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.25rem}
+.close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.25rem;line-height:1.45}
 .close .actions{max-width:420px}
-.close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;text-decoration:none}
+.close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;line-height:1.35;text-decoration:none}
 .close .num:hover{color:var(--yellow)}
 footer{background:var(--soil-deep);padding:34px 0 40px;font-size:1rem;color:var(--cream-dim)}
 footer .wrap{display:grid;gap:10px}

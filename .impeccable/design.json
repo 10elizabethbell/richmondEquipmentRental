@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T01:56:14.320770+00:00",
+  "title": "Design System: Richmond Equipment Rental",
+  "extensions": {
+    "colorMeta": {
+      "site": {
+        "role": "neutral",
+        "displayName": "Fence Green",
+        "tonalRamp": [
+          "#132b24",
+          "#224e42",
+          "#317261",
+          "#41957f",
+          "#5fbaa1",
+          "#8dcebc",
+          "#b8e0d5",
+          "#e3f3ee"
+        ]
+      },
+      "yellow": {
+        "role": "primary",
+        "displayName": "Equipment Yellow",
+        "tonalRamp": [
+          "#3c2d01",
+          "#6e5302",
+          "#a07903",
+          "#d29f04",
+          "#fac41e",
+          "#fcd55f",
+          "#fde59b",
+          "#fef4d7"
+        ]
+      },
+      "yellow-hi": {
+        "role": "primary",
+        "displayName": "Yellow, Lit",
+        "tonalRamp": [
+          "#3d2e00",
+          "#705400",
+          "#a37a00",
+          "#d6a000",
+          "#ffc51a",
+          "#ffd65c",
+          "#ffe599",
+          "#fff5d6"
+        ]
+      },
+      "laser": {
+        "role": "secondary",
+        "displayName": "Grade-Laser Red",
+        "tonalRamp": [
+          "#3d0700",
+          "#700d00",
+          "#a31200",
+          "#d61800",
+          "#ff331a",
+          "#ff6e5c",
+          "#ffa599",
+          "#ffdbd6"
+        ]
+      },
+      "soil": {
+        "role": "neutral",
+        "displayName": "Soil",
+        "tonalRamp": [
+          "#2a1d13",
+          "#4e3622",
+          "#714e32",
+          "#946642",
+          "#b98760",
+          "#cdaa8e",
+          "#e0cab8",
+          "#f2eae3"
+        ]
+      },
+      "soil-2": {
+        "role": "neutral",
+        "displayName": "Soil, Second Layer",
+        "tonalRamp": [
+          "#2a1d13",
+          "#4d3523",
+          "#704d33",
+          "#936543",
+          "#b78662",
+          "#cca98f",
+          "#dfc9b9",
+          "#f2e9e3"
+        ]
+      },
+      "soil-deep": {
+        "role": "neutral",
+        "displayName": "Deep Soil",
+        "tonalRamp": [
+          "#291c15",
+          "#4a3326",
+          "#6c4a37",
+          "#8e6148",
+          "#b28267",
+          "#c8a693",
+          "#ddc7bb",
+          "#f1e9e4"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "tonalRamp": [
+          "#2f250e",
+          "#56441a",
+          "#7e6325",
+          "#a58131",
+          "#caa44e",
+          "#dabe81",
+          "#e8d7b0",
+          "#f6efe0"
+        ]
+      },
+      "cream-dim": {
+        "role": "neutral",
+        "displayName": "Cream, Dim",
+        "tonalRamp": [
+          "#292214",
+          "#4b3f25",
+          "#6d5b36",
+          "#8f7847",
+          "#b39a65",
+          "#c9b792",
+          "#ddd2bb",
+          "#f2ede4"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "#262217",
+          "#453e2b",
+          "#655a3f",
+          "#847652",
+          "#a79871",
+          "#c0b69a",
+          "#d8d1c0",
+          "#efede6"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "Placeholder",
+        "tonalRamp": [
+          "#262118",
+          "#453d2b",
+          "#64583f",
+          "#847452",
+          "#a79572",
+          "#c0b49b",
+          "#d8d0c0",
+          "#efece6"
+        ]
+      },
+      "error-text": {
+        "role": "neutral",
+        "displayName": "Error Text",
+        "tonalRamp": [
+          "#3d0800",
+          "#700f00",
+          "#a31700",
+          "#d61e00",
+          "#ff391a",
+          "#ff725c",
+          "#ffa799",
+          "#ffdcd6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; one yellow word."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Who headings and the form heading."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Yellow step counters."
+      },
+      "row": {
+        "displayName": "Row",
+        "purpose": "Service rows and step leads."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The hero promise line."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Owner voice copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All button text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 6px 18px -6px rgba(0,0,0,.45)",
+        "purpose": "Filled yellow buttons only."
+      },
+      {
+        "name": "photo-drop",
+        "value": "0 18px 40px -18px rgba(0,0,0,.6)",
+        "purpose": "The work photo only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state",
+        "value": ".15s",
+        "purpose": "Background, color and border transitions on buttons, arrows, inputs, chips."
+      },
+      {
+        "name": "press",
+        "value": "transform .1s, translateY(1px)",
+        "purpose": "Button :active."
+      },
+      {
+        "name": "dirt-tune",
+        "value": "GRADE .40, REPOSE .75, RELAX 5, SPRING 140, DAMP 13, IDLE_MS 2600, GRAIN_VOL 5, DIG_TILT -.55, CARRY_TILT .22, DUMP_TILT -2.1",
+        "purpose": "Canvas dirt physics constants (TUNE object in index.html script)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "md",
+        "value": "700px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ],
+    "focus": [
+      {
+        "name": "default-ring",
+        "value": "outline:3px solid #f2b705; outline-offset:3px",
+        "purpose": "All focusable elements."
+      },
+      {
+        "name": "form-laser",
+        "value": "border-color:#ff5a45 (controls); outline:3px solid #ff5a45, offset 2px (submit)",
+        "purpose": "Hover and focus inside the estimate form."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Filled Button",
+      "kind": "button",
+      "refersTo": "button-fill",
+      "description": "Primary yellow action: text Steve, submit the estimate.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-fill\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z\"/></svg>Text me photos for an estimate</a></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--site);padding:24px} .ds-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;border-radius:12px;font:800 1.05rem/1.1 var(--font);text-decoration:none;cursor:pointer;border:2px solid var(--yellow);transition:background .15s,color .15s,transform .1s} .ds-btn:active{transform:translateY(1px)} .ds-btn svg{width:22px;height:22px;flex:none} .ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px} .ds-btn-fill{background:var(--yellow);color:var(--ink);box-shadow:0 6px 18px -6px rgba(0,0,0,.45)} .ds-btn-fill:hover{background:var(--yellow-hi);border-color:var(--yellow-hi)}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action: go to the form, see more work on Facebook.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-line\" href=\"#\">Fill out the estimate form</a></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--site);padding:24px} .ds-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;border-radius:12px;font:800 1.05rem/1.1 var(--font);text-decoration:none;cursor:pointer;border:2px solid var(--yellow);transition:background .15s,color .15s,transform .1s} .ds-btn:active{transform:translateY(1px)} .ds-btn svg{width:22px;height:22px;flex:none} .ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px} .ds-btn-line{background:transparent;color:var(--cream)} .ds-btn-line:hover{background:rgba(242,183,5,.12)}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Tap a job to text about it; only the arrow lights up.",
+      "html": "<div class=\"ds-ground\"><ul class=\"ds-svc\"><li><a href=\"#\">Trenching &amp; excavation<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a href=\"#\">Concrete breaking &amp; removal<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil);padding:24px;color:var(--cream);font-family:var(--font)} .ds-svc{list-style:none;margin:0;padding:0} .ds-svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)} .ds-svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;color:inherit;font-weight:800;font-size:1.25rem;letter-spacing:-.01em;outline:none} .ds-arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);transition:background .15s,color .15s} .ds-arrow svg{width:18px;height:18px} .ds-svc a:hover .ds-arrow,.ds-svc a:focus-visible .ds-arrow{background:var(--yellow);color:var(--ink)} .ds-svc a:focus-visible .ds-arrow{outline:3px solid var(--yellow);outline-offset:3px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Form field; laser-red border on hover and focus.",
+      "html": "<div class=\"ds-ground\"><label class=\"ds-field\"><span>Where's the job?</span><input placeholder=\"Town or address\"></label></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-field{display:block} .ds-field span{display:block;font-weight:700;margin-bottom:8px} .ds-field input{width:100%;box-sizing:border-box;min-height:52px;padding:13px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);background:rgba(244,236,218,.06);color:var(--cream);font:16px/1.4 var(--font);transition:border-color .15s,background .15s} .ds-field input::placeholder{color:#b7a98c} .ds-field input:hover,.ds-field input:focus{border-color:var(--laser);outline:none;background:rgba(244,236,218,.09)}"
+    },
+    {
+      "name": "Job Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Multi-select job types; laser border on hover/focus, yellow when checked.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Concrete breaking</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Grading / gravel</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Tight access</span></label></div></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-chips{display:flex;flex-wrap:wrap;gap:8px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px} .ds-chip span{display:flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);font-size:1rem;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s,color .15s} .ds-chip span:hover,.ds-chip input:focus-visible+span{border-color:var(--laser)} .ds-chip input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--ink)} .ds-chip input:checked+span:hover{border-color:var(--laser)}"
+    },
+    {
+      "name": "Estimate Steps",
+      "kind": "custom",
+      "description": "Ordered steps with heavy yellow numerals.",
+      "html": "<div class=\"ds-ground\"><ol class=\"ds-steps\"><li><div><b>Send me pictures, the location and a description of the work.</b><span>Text is easiest.</span></div></li><li><div><b>I look it over and get back to you with an estimate.</b><span>Straight answer on what it takes.</span></div></li></ol></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s} .ds-steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s} .ds-steps li::before{content:counter(s);font-weight:900;font-size:2.4rem;line-height:.9;color:var(--yellow);text-align:center} .ds-steps b{display:block;font-size:1.25rem;line-height:1.32;padding-top:2px} .ds-steps span{color:var(--cream-dim)}"
+    },
+    {
+      "name": "Section Headline",
+      "kind": "custom",
+      "description": "Heavy uppercase system-sans h2 on a soil layer.",
+      "html": "<div class=\"ds-ground\"><h2 class=\"ds-h2\">How estimates work</h2></div>",
+      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil);padding:24px;color:var(--cream);font-family:var(--font)} .ds-h2{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;font-size:clamp(2rem,8.5vw,3.6rem)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Open Trench",
+    "overview": "The page is an active job site seen from the side, and scrolling goes underground. The top is construction-fence green with the soil bank in the hero; below that, services, the estimate steps and the form sit on successively deeper soil layers separated by hand-wavy strata seams; the work photo stands on a second dirt bank; the footer is the deepest soil. Nothing is ever black: the bottom of the page is still dirt.\n\nThe interaction is the identity. The soil is drawn on canvas, slumps to its angle of repose, throws grains, and an excavator bucket follows the finger or mouse, digs, carries and dumps. Left alone, the hero bucket grades the bank to a rotary laser's red line by itself. Everything else on the page is deliberately plain and phone-first so the dirt carries the character and the number stays easy to hit.\n\nType is the system sans at heavy weight, uppercase and tight, like stencil on a machine; controls are equipment yellow; laser red is reserved for the \"you are touching this\" signal on form controls and for the laser beam itself.",
+    "keyCharacteristics": [
+      "Fence green surface, soil-brown strata below, no black grounds anywhere.",
+      "Equipment yellow for every primary control and every emphasized numeral or word.",
+      "Laser red only for form hover/focus outlines and the canvas laser beam.",
+      "System font stack, 900 uppercase display, generous 16px body.",
+      "Two interactive canvas dirt scenes; the rest is flat, quiet and touch-sized (44px minimum targets)."
+    ],
+    "rules": [
+      {
+        "name": "The No Black Ground Rule",
+        "body": "No section, panel or footer is black or near-black. The deepest ground is Deep Soil; when a darker layer is needed, go browner, not blacker.",
+        "section": "colors"
+      },
+      {
+        "name": "The Laser Means Touch Rule",
+        "body": "Laser red appears only where the visitor's pointer or focus is on a form control, plus the laser in the canvas. Don't use it for errors (errors use Error Text), decoration or headings.",
+        "section": "colors"
+      },
+      {
+        "name": "The Yellow Is a Control Rule",
+        "body": "Yellow fills are things you press. Yellow text is reserved for emphasis that echoes the controls (the headline word, numerals, Who headings), never body copy.",
+        "section": "colors"
+      },
+      {
+        "name": "The System Stack Rule",
+        "body": "The system font stack is a house decision, not a placeholder: no webfont requests, instant first paint inside Facebook's in-app browser. Character comes from weight (900), case and tight tracking. Don't add a display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The 1rem Floor Rule",
+        "body": "Nothing on the page is smaller than 0.875rem (the \"Poconos, PA\" line under the name); all helper, error and footer text is 1rem.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone-First Rule",
+        "body": "Every layout decision is made for a ~390px phone first; desktop only spreads the same stack into columns. Buttons stack full width on phone.",
+        "section": "layout"
+      },
+      {
+        "name": "The Strata Rule",
+        "body": "Adjacent sections meet at a seam, not a straight edge: the seam is the upper section's color drawn as a wavy 28px edge over the top of the lower one. New sections take the next soil tone and a seam.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Soft-Only Shadow Rule",
+        "body": "Shadows are blurred and negative-spread. No hard offset shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep the phone number visible top right on the first screen, as the only number shown there; the hero's two buttons are text and form, phone first.",
+      "**Do** put new sections on the next soil tone with a strata seam, per The Strata Rule.",
+      "**Do** use the 2px laser-red border for hover and focus on any new form control, and the 3px yellow ring for focus everywhere else.",
+      "**Do** keep every tap target at 44px or taller and every text size at 1rem or larger (except the 0.875rem brand subline).",
+      "**Do** keep the email address in the footer only, and the Facebook link as the button directly under the work photo's dirt bank (plus the footer).",
+      "**Do** tune the dirt from `TUNE` first; change `profile()` or `resize()` only for terrain shape or density.",
+      "**Do** keep the canvas soil gradient's last stop equal to `--soil` so the bank flows into the first section."
+    ],
+    "donts": [
+      "**Don't** add a webfont; the system font stack is on purpose.",
+      "**Don't** add a sticky or fixed call bar. (The desktop steps column is sticky inside its grid; that is not a bar.)",
+      "**Don't** use black or near-black grounds anywhere, per The No Black Ground Rule.",
+      "**Don't** repeat the phone number elsewhere in the first screen, or show the email outside the footer.",
+      "**Don't** use laser red as a fill, for text, or for errors.",
+      "**Don't** put kicker or eyebrow labels above headings; the h2 stands alone.",
+      "**Don't** use hard offset shadows."
+    ]
+  }
+}
