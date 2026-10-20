@@ -4,7 +4,7 @@
 web
 
 ## Stack
-Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking, system font stack. Hosted on GitHub Pages.
+Static single-file HTML/CSS/JS (`index.html`), no frameworks, no tracking. Cal Sans (Google Fonts) for headings, system stack for body. Hosted on GitHub Pages.
 
 ## Users
 - Homeowners in the Poconos with a yard, driveway, patio or drainage job (source: Facebook caption 2026-10-17, "works with homeowners and contractors").
@@ -29,7 +29,7 @@ A one-man, compact-equipment outfit that takes the dirty work (digging, breaking
 
 ## Brand commitments
 - Owner's voice, first person ("I"), contractor-direct, no fluff (caption tone: "Send me pictures, the location and a description of the work for an estimate.").
-- Colors drawn from the trade and the equipment in the photo (construction-fence green, Wacker Neuson yellow, soil browns, laser-level red): inferred, no brand exists.
+- Look: Ellie's calm band style (paper, green and deep-green bands, one warm accent as a fill). Colors drawn from his photo since no brand exists (inferred): construction-fence green for the dark bands, Wacker Neuson equipment yellow as the accent.
 
 ## Evidence on hand
 - Facebook group post 2026-10-17, caption verified verbatim by Muse.
@@ -39,4 +39,4 @@ A one-man, compact-equipment outfit that takes the dirty work (digging, breaking
 ## Principles
 - Phone first; the first screen shows what he does, where, and how to start an estimate.
 - Only facts from the brief. Nothing invented.
-- The page should feel like the work: dirt you can push around.
+- Calm and orderly: his real job photo in the hero, short service rows, his own estimate process. Motion is limited to the hero headline bounce-in and one quiet fade-up.
