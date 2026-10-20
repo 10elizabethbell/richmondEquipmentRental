@@ -3,259 +3,297 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Richmond Equipment Rental · Excavation, Demo &amp; Site Prep in the Poconos</title>
-<meta name="description" content="Excavation, concrete demolition, grading and site prep in the Poconos. Send Steve pictures, the location and a description of the work for an estimate.">
-<meta name="theme-color" content="#17352d">
+<title>Richmond Equipment Rental LLC · Excavation, demolition and site prep in the Poconos</title>
+<meta name="description" content="Excavation, concrete demolition, grading and site prep in the Poconos, for homeowners and contractors. Call or text Steve at 917-525-7878.">
+<meta name="theme-color" content="#f5f6f2">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Richmond Equipment Rental LLC">
-<meta property="og:description" content="Excavation, concrete demolition, grading and site prep in the Poconos.">
+<meta property="og:title" content="Richmond Equipment Rental LLC · Dirty work, done right in the Poconos">
+<meta property="og:description" content="Excavation, concrete demolition, grading and site prep in the Poconos. Call or text Steve at 917-525-7878.">
 <meta property="og:url" content="https://10elizabethbell.github.io/richmondEquipmentRental/">
 <meta property="og:image" content="https://10elizabethbell.github.io/richmondEquipmentRental/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2317352d'/%3E%3Cpath d='M0 46c10-4 20 2 32-1s22-5 32-1v20H0z' fill='%236e4a2c'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='38' fill='%23f2b705'%3ER%3C/text%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4a3c'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-weight='900' font-size='38' fill='%23f2b705'%3ER%3C/text%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" as="image" href="img/hero-strip.webp" media="(max-width:759px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
-/* ---------- tokens ---------- */
+/* ---------- Tokens ---------- */
 :root{
-  --site:#17352d;       /* construction-fence green */
-  --site-2:#1e4238;
-  --soil:#3d2a1b;       /* deep soil: matches the bottom of the dirt canvas */
-  --soil-2:#4a3322;
-  --soil-deep:#33231a;
-  --cream:#f4ecda;
-  --cream-dim:#d8cbb0;
-  --yellow:#f2b705;     /* equipment yellow */
-  --yellow-hi:#ffc928;
-  --ink:#1d1a12;
-  --laser:#ff5a45;      /* grade-laser red: form outlines + the laser line */
+  /* paper, construction-fence green (his photo), deep green, equipment yellow */
+  --paper:#f5f6f2;       /* page ground */
+  --card:#ffffff;
+  --field:#e5eae3;       /* inputs and chips on the white form card */
+  --ink:#10271f;         /* headings, text on yellow */
+  --body:#28382f;        /* running text on light */
+  --soft:#4c5a51;        /* secondary text on light */
+  --navy:#1f4a3c;        /* fence green: services, close */
+  --deep:#10271f;        /* how it works, footer (line texture) */
+  --on-dark:#f5f7f3;
+  --on-dark-soft:#cbd8cf;
+  --yellow:#f2b705;      /* equipment yellow, fills only; text on it is --ink */
+  --yellow-2:#ffc929;
+  --yellow-ink:#805c00;  /* yellow as text on light */
+  --line:rgba(16,39,31,.12);
+  --focus:#1f4a3c;       /* form hover/focus outline, distinct from the yellow fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
   --gutter:20px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 *{box-sizing:border-box}
-html{overscroll-behavior-y:none;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--site);color:var(--cream);font:400 16px/1.55 var(--font);caret-color:var(--yellow)}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
 ::selection{background:var(--yellow);color:var(--ink)}
-a{color:inherit;text-underline-offset:3px}
-img{max-width:100%;display:block}
-.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
-h1,h2,h3{font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;margin:0;text-wrap:balance}
-h2{font-size:clamp(2rem,8.5vw,3.6rem);margin-bottom:28px}
-:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+img,svg{display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--yellow)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
+p{margin:0}
 
-/* ---------- buttons ---------- */
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 16px;border-radius:12px;
-  font:800 clamp(.95rem,4.3vw,1.05rem)/1.3 var(--font);text-decoration:none;text-align:center;cursor:pointer;border:2px solid var(--yellow);
-  transition:background .15s,color .15s,transform .1s}
-.btn:active{transform:translateY(1px)}
-.btn-fill{background:var(--yellow);color:var(--ink);box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
-.btn-fill:hover{background:var(--yellow-hi);border-color:var(--yellow-hi)}
-.btn-line{background:transparent;color:var(--cream)}
-.btn-line:hover{background:rgba(242,183,5,.12)}
-.btn svg{width:22px;height:22px;flex:none}
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--yellow-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--yellow)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
 
-/* ---------- header ---------- */
-.top{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;padding-bottom:6px}
-.brand{display:flex;flex-direction:column;line-height:1.3;text-decoration:none}
-.brand b{font-weight:900;text-transform:uppercase;letter-spacing:-.01em;font-size:1rem}
-.brand span{font-size:1rem;color:var(--cream-dim);letter-spacing:.02em}
-.top .phone{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font-weight:800;font-size:1rem;text-decoration:none;white-space:nowrap;color:var(--cream)}
-.top .phone svg{width:18px;height:18px;color:var(--yellow)}
-.top .phone:hover{color:var(--yellow)}
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(16,39,31,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
 
-/* ---------- hero ---------- */
-.hero{position:relative;display:flex;flex-direction:column;overflow:hidden;
-  background:linear-gradient(180deg,var(--site-2) 0%,var(--site) 55%)}
-.hero>.wrap{width:100%}
-.hero-copy{position:relative;z-index:2;padding-top:26px;padding-bottom:6px;pointer-events:none}
-.hero-copy a{pointer-events:auto}
-.hero h1{font-size:clamp(2.75rem,13.2vw,6rem);max-width:11ch}
-.hero h1 em{font-style:normal;color:var(--yellow)}
-.promise{font-size:clamp(1rem,4.4vw,1.25rem);line-height:1.45;color:var(--cream-dim);max-width:34ch;margin:16px 0 22px}
-.actions{display:grid;gap:12px}
-.dirt-hero{position:relative;height:clamp(210px,30svh,250px);margin-top:4px}
-canvas.dirt{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab}
-canvas.dirt:active{cursor:grabbing}
-#dirtClose{touch-action:pan-y}
-.dirt-hero .still,.dirt-close .still{position:absolute;inset:auto 0 0;height:58%;background:linear-gradient(#6e4a2c,var(--soil));
-  clip-path:polygon(0 30%,12% 18%,26% 34%,40% 8%,55% 30%,70% 22%,84% 40%,100% 20%,100% 100%,0 100%)}
-.dirt.ready+.still{display:none}
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1.15 var(--display);text-align:center;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(245,247,243,.75)}
 
-/* ---------- soil sections ---------- */
-.under{background:var(--soil);position:relative}
-.services{padding:38px 0 56px}
-.svc{list-style:none;margin:0;padding:0}
-.svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)}
-.svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;
-  border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;font-weight:800;font-size:1.25rem;line-height:1.35;letter-spacing:-.01em}
-.arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);color:var(--cream);transition:background .15s,color .15s}
-.arrow svg{width:18px;height:18px}
+/* ---------- Header ---------- */
+.top{background:var(--paper);color:var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
+.brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
+.brand b{font:400 21px/1 var(--display);letter-spacing:.01em}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--yellow-ink)}
+
+/* ---------- Hero: his own job photo under a green overlay ---------- */
+.hero{padding:0;position:relative;background-color:var(--deep);background-image:var(--texture);color:var(--on-dark);overflow:hidden;isolation:isolate}
+/* phones: the photo is a wide strip along the hero's bottom edge (fence, both machines, the laser),
+   so it keeps its own shape and the words sit on plain deep green above it */
+.hero-photo{position:absolute;left:0;right:0;bottom:0;height:var(--strip);z-index:-2}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 45%}
+.hero{--strip:clamp(190px,50vw,300px)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--deep) calc(100% - var(--strip)),rgba(16,39,31,.55) calc(100% - var(--strip) * .55),rgba(16,39,31,.25) 100%)}
+.hero-copy{position:relative;display:grid;gap:20px;justify-items:start;padding-top:56px;padding-bottom:calc(var(--strip) + 8px)}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:12ch}
+/* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
+.hero h1 .w{display:inline-block;white-space:nowrap}
+.hero h1 .c{display:inline-block;opacity:0;transform:translateX(50px);animation:letter-in 1s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 20ms)}
+@keyframes letter-in{to{opacity:1;transform:none}}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:32ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
+
+/* ---------- Who I work with ---------- */
+.who{display:grid;gap:16px;margin-top:32px}
+.who div{background:var(--card);border-radius:var(--r-card);padding:24px}
+.who h3{font-size:24px}
+.who p{margin-top:8px}
+
+/* ---------- Services: each row is a text link; only the arrow changes on hover ---------- */
+.svc{list-style:none;margin:32px 0 0;padding:0;display:grid;column-gap:40px}
+.svc li{border-top:1px solid rgba(255,255,255,.14)}
+.svc li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;padding:12px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(20px,5.4vw,24px)/1.15 var(--display)}
 .svc a:hover,.svc a:focus-visible{outline:none;background:none;box-shadow:none}
-.svc a:hover .arrow,.svc a:focus-visible .arrow{background:var(--yellow);color:var(--ink)}
-.svc a:focus-visible .arrow{outline:3px solid var(--yellow);outline-offset:3px}
-.svc-note{color:var(--cream-dim);margin:14px 0 0;font-size:1rem}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.svc a:focus-visible .arrow{background:var(--yellow);color:var(--ink);outline:3px solid var(--yellow);outline-offset:3px}
+.svc-note{margin-top:18px;font-size:16px}
 
-.who{display:grid;gap:26px;margin-top:52px}
-.who h3{font-size:1.6rem;color:var(--yellow);margin-bottom:8px}
-.who p{margin:0;color:var(--cream-dim);max-width:40ch}
+/* ---------- Work ---------- */
+.shot{margin:32px 0 0;border-radius:var(--r-card);overflow:hidden;background:var(--field);max-width:760px}
+.shot img{width:100%;height:auto}
+.fb{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:76px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--navy);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display);max-width:760px}
+.fb:hover,.fb:focus-visible{outline:none;box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:var(--yellow)}
+.fb:focus-visible .arrow{background:var(--yellow);color:var(--ink);outline:3px solid var(--yellow-ink);outline-offset:3px}
 
-/* how + estimate */
-.how{position:relative;padding:44px 0 64px;background:var(--soil-2)}
-.steps{list-style:none;margin:0 0 44px;padding:0;display:grid;gap:22px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s}
-.steps li::before{content:counter(s);font-weight:900;font-size:2.4rem;line-height:.9;color:var(--yellow);text-align:center}
-.steps b{display:block;font-size:1.25rem;line-height:1.32;padding-top:2px}
-.steps span{color:var(--cream-dim);font-size:1rem}
-.area{margin:0 0 40px;font-size:1rem;color:var(--cream-dim)}
-.area b{color:var(--cream)}
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
+.area{margin-top:36px;font-size:18px;color:var(--on-dark)}
 
-/* strata seam between soil layers */
-.seam{display:block;width:100%;height:28px}
+/* ---------- Form ---------- */
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+input[type=text],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
+textarea{min-height:120px;resize:vertical}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--field);border:2px solid transparent;font:16px/1.2 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
+.field.bad .err{display:block}
+/* after the :focus rule so a bad field keeps its red edge while focused */
+.field.bad input[type=text],.field.bad textarea{border-color:var(--error)}
+form .btn-primary{width:100%}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{display:grid;gap:12px;background:var(--field);border-radius:16px;padding:16px}
+.sent p{color:var(--ink);font-weight:600}
+.sent pre{margin:0;white-space:pre-wrap;font:15px/1.5 var(--text);color:var(--ink)}
+.sent a{white-space:nowrap}
+.copy{justify-self:start;min-height:44px;padding:0 18px;border-radius:var(--pill);border:2px solid var(--ink);background:transparent;color:var(--ink);font:400 16px/1 var(--display);cursor:pointer}
+@media (max-width:380px){.chips label{padding:0 14px}}
 
-/* ---------- form ---------- */
-.estimate{background:rgba(29,26,18,.28);border-radius:18px;padding:22px 18px 24px}
-.estimate h3{font-size:2rem;margin-bottom:6px}
-.estimate .sub{margin:0 0 20px;color:var(--cream-dim);font-size:1rem}
-.field{display:block;margin-bottom:18px}
-.field>span,.legend{display:block;font-weight:700;margin-bottom:8px;font-size:1rem}
-.field small{font-weight:400;font-size:1rem;color:var(--cream-dim)}
-.field input,.field textarea{width:100%;min-height:52px;padding:13px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);
-  background:rgba(244,236,218,.06);color:var(--cream);font:16px/1.4 var(--font);transition:border-color .15s,background .15s}
-.field textarea{min-height:110px;resize:vertical}
-.field input::placeholder,.field textarea::placeholder{color:#b7a98c}
-.field input:hover,.field textarea:hover,.field input:focus,.field textarea:focus{border-color:var(--laser);outline:none;background:rgba(244,236,218,.09)}
-fieldset{border:0;margin:0 0 18px;padding:0}
-legend{padding:0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{position:relative}
-.chip input{position:absolute;opacity:0;width:1px;height:1px}
-.chip span{display:flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);
-  font-size:1rem;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s,color .15s}
-.chip span:hover,.chip input:focus-visible+span{border-color:var(--laser)}
-.chip input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--ink)}
-.chip input:checked+span:hover{border-color:var(--laser)}
-.estimate .btn{width:100%;margin-top:6px}
-.estimate .btn:hover,.estimate .btn:focus-visible{outline:3px solid var(--laser);outline-offset:2px}
-.err{display:none;margin:-8px 0 14px;color:#ffb4a8;font-weight:600;font-size:1rem}
-.err.on{display:block}
-.handoff{margin:12px 0 0;font-size:1rem;color:var(--cream-dim)}
-.composed{margin-top:18px;padding:16px;border-radius:12px;background:rgba(244,236,218,.07)}
-.composed p{margin:0 0 10px;font-size:1rem}
-.composed pre{margin:0 0 12px;white-space:pre-wrap;font:1rem/1.5 var(--font);color:var(--cream);user-select:all;-webkit-user-select:all}
-.copy{min-height:44px;padding:0 16px;border-radius:10px;border:2px solid rgba(244,236,218,.3);background:none;color:var(--cream);font:700 1rem var(--font);cursor:pointer}
-.copy:hover,.copy:focus-visible{border-color:var(--laser);outline:none}
+/* ---------- Close ---------- */
+.close .who-line{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft);max-width:36ch}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--yellow)}
 
-/* ---------- proof ---------- */
-.proof{background:var(--site);padding:52px 0 0;position:relative}
-.photo{position:relative;max-width:760px}
-.photo img{width:100%;height:auto;border-radius:16px 16px 0 0;box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}
-.dirt-close{position:relative;height:150px;margin-top:-62px;z-index:2}
-.fb{display:flex;align-items:center;justify-content:center;gap:12px;max-width:760px}
+/* ---------- Footer ---------- */
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
+footer .wrap{display:grid;gap:14px}
+footer b{font:400 21px/1.2 var(--display);color:var(--on-dark)}
+footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none;overflow-wrap:anywhere}
 
-/* ---------- close + footer ---------- */
-.close{background:var(--soil);padding:18px 0 60px;text-align:left}
-.close .fb{margin-bottom:56px}
-.close h2{margin-bottom:14px}
-.close p{color:var(--cream-dim);max-width:40ch;margin:0 0 24px;font-size:1.25rem;line-height:1.45}
-.close .actions{max-width:420px}
-.close .num{display:inline-flex;align-items:center;min-height:44px;margin-top:12px;font-weight:800;font-size:1.25rem;line-height:1.35;text-decoration:none}
-.close .num:hover{color:var(--yellow)}
-footer{background:var(--soil-deep);padding:34px 0 40px;font-size:1rem;color:var(--cream-dim)}
-footer .wrap{display:grid;gap:10px}
-footer b{color:var(--cream);text-transform:uppercase;font-weight:900;letter-spacing:-.01em}
-footer a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
-footer a:hover{color:var(--yellow)}
-footer nav{display:flex;flex-wrap:wrap;column-gap:22px}
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,18,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
 
-/* ---------- larger screens ---------- */
-@media (min-width:700px){
-  :root{--gutter:36px}
-  .actions{grid-template-columns:auto auto;justify-content:start}
-  .actions .btn{padding:0 28px}
-  .who{grid-template-columns:1fr 1fr;gap:40px}
-  .estimate{padding:32px}
-  .top{padding-top:22px}
-  .brand b{font-size:1.25rem}
-  .top .phone{font-size:1.25rem}
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
+
+/* ---------- Desktop ---------- */
+@media (min-width:760px){
+  :root{--gutter:40px}
+  .top .wrap{min-height:76px}
+  .brand b{font-size:24px}
+  .tel{font-size:20px}
+  section{padding:96px 0}
+  /* desktop: the photo fills the band, darkest behind the words on the left */
+  .hero-photo{top:0;height:auto}
+  .hero-photo img{object-position:50% 40%}
+  .hero::before{background:linear-gradient(90deg,rgba(16,39,31,.93) 0%,rgba(16,39,31,.86) 45%,rgba(16,39,31,.42) 100%)}
+  .hero-copy{padding-top:104px;padding-bottom:120px}
+  .promise{max-width:36ch}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
+  .actions .btn{min-width:240px}
+  .who{grid-template-columns:1fr 1fr;gap:24px}
 }
 @media (min-width:1024px){
-  .hero{min-height:min(92svh,900px)}
-  .hero-copy{padding-top:70px}
-  .hero h1{max-width:12ch}
-  .promise{max-width:40ch}
-  .dirt-hero{position:absolute;inset:0;height:auto;margin:0}
-  .hero-copy{padding-bottom:260px}
-  .services{padding:64px 0 84px}
-  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  .who{grid-template-columns:1fr;margin-top:0;padding-top:58px}
-  .how-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
-  .how{padding:52px 0 90px}
-  .how-grid>div:first-child{position:sticky;top:32px}
-  .proof{padding-top:84px}
-  .photo{max-width:none}
-  .photo img{aspect-ratio:16/9;object-fit:cover;object-position:50% 72%}
-  .dirt-close{height:190px;margin-top:-80px}
-  .close{padding-bottom:80px}
+  .svc{grid-template-columns:1fr 1fr}
+  .svc li:nth-last-child(2){border-bottom:1px solid rgba(255,255,255,.14)}
+  .work .wrap{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;column-gap:56px}
+  .work .head{grid-column:2;grid-row:1;align-self:end}
+  .work .shot{grid-column:1;grid-row:1/3;margin-top:0}
+  .work .fb{grid-column:2;grid-row:2;align-self:start}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
+  .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
+  .bigtel{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  .steps b{font-size:22px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* hover styles only where there is a real pointer, so taps don't leave them stuck on */
+@media (hover:hover){
+.tel:hover{color:var(--yellow-ink)}
+.btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.svc a:hover .arrow,.fb:hover .arrow{background:var(--yellow);color:var(--ink)}
+input[type=text]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover,.copy:hover{outline:2px solid var(--focus);outline-offset:2px}
+.bigtel:hover{color:var(--yellow)}
+footer a:hover{color:var(--yellow)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+  .hero h1 .c{animation:none;opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <!--
-DIRECTION CONTRACT
-THESIS: Steve takes the dirty work off your hands; the page lets you do a little of it yourself.
-OWN-WORLD: an active job site. Construction-fence green over a bank of real-looking soil, equipment yellow on
-  the controls, a grade laser's red line across the dirt. Scrolling goes "underground": services and the
-  estimate sit on soil layers, the work photo stands on a second dirt bank.
-STORY: surface (who and what) → dig in (the work) → how to get an estimate (his own words: pictures, location,
-  description) → proof (the graded lot from his own post) → close.
-FIRST VIEWPORT (phone): name + number top right; "Let me handle the dirty work."; one promise line; two buttons
-  (text photos / estimate form); the dirt bank with the excavator bucket grading it to the laser line.
-FORM: (no concept roll or seed: unattended pitch-site build, world chosen from the trade per the house rules)
-  system sans, heavy uppercase display; soil drawn on canvas with angle-of-repose slumping, flying grains,
-  a bucket that follows finger or mouse, digs, carries and dumps, and grades by itself when left alone.
+THESIS: Steve takes the dirty work off homeowners' and contractors' hands in the Poconos; the page earns trust through calm order (after lpmr.co.uk) and his own job photo, and makes it easy to text him pictures for an estimate.
+OWN-WORLD: Off-white paper, construction-fence green (#1f4a3c, from the fence in his photo) and deep green (#10271f, faint diagonal lines) bands, equipment yellow (#f2b705, the Wacker Neuson loader) as the one warm accent (fills only; #805c00 when it has to be text on light). Cal Sans display, system body at 16/1.7.
+STORY: The visitor sees who does dirt work in the Poconos, sees the jobs he takes and a real graded lot, learns his process (pictures, location, description), and texts him.
+FIRST VIEWPORT: Paper header with wordmark left and tap-to-call number top right. Hero on his graded-lot photo under a deep green overlay: eyebrow "For homeowners and contractors", "Dirty work, done right in the Poconos.", one promise line, two pill buttons (Text me photos for an estimate, Estimate form).
+FORM: calm-photo band system; the earlier drag-to-dig dirt hero is in git history (d66e0e1) and offered as opt-in in HANDOFF.md.
 -->
-<header class="hero">
-  <div class="wrap top">
-    <a class="brand" href="#top" id="top" aria-label="Richmond Equipment Rental, home"><b>Richmond Equipment Rental</b><span>Poconos, PA</span></a>
-    <a class="phone" href="tel:+19175257878"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>917-525-7878</a>
-  </div>
-  <div class="wrap hero-copy">
-    <h1>Let me handle the <em>dirty work.</em></h1>
-    <p class="promise">I treat your property like it's my own, tell you straight what the job takes, and leave it ready for what comes next.</p>
-    <div class="actions">
-      <a class="btn btn-fill" id="heroText" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work.">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Text me photos for an estimate</a>
-      <a class="btn btn-line" href="#estimate">Fill out the estimate form</a>
-    </div>
-  </div>
-  <div class="dirt-hero">
-    <canvas class="dirt" id="dirtHero" aria-label="A bank of soil with an excavator bucket. Drag to dig." role="img"></canvas>
-    <div class="still" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Richmond Equipment Rental LLC, back to top"><b>Richmond</b><span>Equipment Rental LLC</span></a>
+    <a class="tel" href="tel:+19175257878"><svg aria-hidden="true"><use href="#i-phone"/></svg>917-525-7878</a>
   </div>
 </header>
 
-<main>
-<section class="under services" aria-labelledby="svcH">
-  <div class="wrap svc-grid">
-    <div>
-      <h2 id="svcH">What I do</h2>
-      <ul class="svc">
-        <li><a data-svc="trenching and excavation" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20trenching%20and%20excavation%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Trenching &amp; excavation<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="concrete breaking and removal" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20concrete%20breaking%20and%20removal%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Concrete breaking &amp; removal<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="driveway or patio tear-out" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20driveway%20or%20patio%20tear-out%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Driveway &amp; patio tear-outs<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="yard grading and gravel spreading" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20yard%20grading%20and%20gravel%20spreading%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Grading &amp; gravel spreading<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="shrub removal and property cleanup" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20shrub%20removal%20and%20property%20cleanup%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Shrub removal &amp; cleanup<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-        <li><a data-svc="tight-access" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20tight-access%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Tight-access work<span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
-      </ul>
-      <p class="svc-note">Tap a job to text me about it.</p>
+<main id="top">
+<section class="hero" id="hero" aria-labelledby="h1">
+  <picture class="hero-photo">
+    <source media="(min-width:760px)" srcset="img/hero-wide.webp" width="1920" height="938">
+    <img src="img/hero-strip.webp" width="1000" height="469" alt="" decoding="async" fetchpriority="high">
+  </picture>
+  <div class="wrap hero-copy">
+    <p class="eyebrow">For homeowners and contractors</p>
+    <h1 id="h1">Dirty work, done right <span class="accent">in the Poconos.</span></h1>
+    <p class="promise">I treat your property like it's my own and leave it <b>ready for what comes next.</b></p>
+    <div class="actions">
+      <a class="btn btn-primary" data-sms href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work."><svg aria-hidden="true"><use href="#i-chat"/></svg>Text photos for an estimate</a>
+      <a class="btn btn-ghost" href="#ask">Estimate form</a>
     </div>
+  </div>
+</section>
+
+<section class="on-paper" aria-labelledby="h-who">
+  <div class="wrap">
+    <h2 id="h-who" class="rise">Big job or part of one.</h2>
     <div class="who">
-      <div>
+      <div class="rise">
         <h3>Homeowners</h3>
         <p>Your yard is where your family lives. I work it carefully, keep the machines off what stays, and clean up before I go.</p>
       </div>
-      <div>
+      <div class="rise">
         <h3>Contractors</h3>
         <p>Hand me the digging or the demo, the whole job or just part of it, so your crew can focus on the install.</p>
       </div>
@@ -263,73 +301,104 @@ FORM: (no concept roll or seed: unattended pitch-site build, world chosen from t
   </div>
 </section>
 
-<section class="how" aria-labelledby="howH">
-  <svg class="seam" id="seam1" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;top:0;left:0"></svg>
-  <div class="wrap how-grid">
-    <div>
-      <h2 id="howH">How estimates work</h2>
-      <ol class="steps">
-        <li><div><b>Send me pictures, the location and a description of the work.</b><span>Text is easiest. A few photos from different angles help.</span></div></li>
-        <li><div><b>I look it over and get back to you with an estimate.</b><span>Straight answer on what it takes.</span></div></li>
-        <li><div><b>I bring the right machine and get it done.</b><span>Compact equipment fits through gates and side yards.</span></div></li>
-      </ol>
-      <p class="area"><b>Where I work:</b> the Poconos, Pennsylvania.</p>
+<section class="on-navy" id="services" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">What I do</p>
+      <h2 id="h-svc">The jobs I <span class="accent">take on.</span></h2>
     </div>
+    <ul class="svc">
+      <li class="rise"><a data-svc="Trenching / excavation" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20trenching%20and%20excavation%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Trenching &amp; excavation<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a data-svc="Concrete breaking" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20concrete%20breaking%20and%20removal%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Concrete breaking &amp; removal<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a data-svc="Driveway / patio tear-out" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20driveway%20or%20patio%20tear-out%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Driveway &amp; patio tear-outs<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a data-svc="Grading / gravel" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20yard%20grading%20and%20gravel%20spreading%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Yard grading &amp; gravel<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a data-svc="Shrub removal / cleanup" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20shrub%20removal%20and%20property%20cleanup%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Shrub removal &amp; cleanup<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+      <li class="rise"><a data-svc="Tight access" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%20have%20a%20tight-access%20job%20I%27d%20like%20an%20estimate%20on.%20Location%3A%20">Tight-access work<span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+    <p class="svc-note rise">Tap a job to text me about it.</p>
+  </div>
+</section>
 
-    <form class="estimate" id="estimate" novalidate>
-      <h3>Get an estimate</h3>
-      <p class="sub">Fill this in and it opens a text to me, ready to send. Add your photos there.</p>
-      <label class="field"><span>Your name</span><input name="name" autocomplete="name" placeholder="First and last"></label>
-      <fieldset>
-        <legend class="legend">What's the job? <small>(pick any)</small></legend>
+<section class="on-paper work" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="head rise">
+      <h2 id="h-work">Recent work</h2>
+    </div>
+    <div class="shot rise">
+      <img src="img/work-01.webp" srcset="img/work-01.webp 960w, img/work-01-1520.webp 1520w" sizes="(min-width:1024px) 640px, (min-width:800px) 760px, calc(100vw - 40px)" width="960" height="901" loading="lazy" decoding="async"
+        alt="A cleared and graded lot with a Bobcat mini excavator, a tracked loader and a laser level on a tripod">
+    </div>
+    <a class="fb rise" href="https://www.facebook.com/profile.php?id=100000051669923" rel="noopener">
+      <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of my work.</span>
+      <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="on-deep how" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how" class="rise">How estimates <span class="accent">work.</span></h2>
+    <ol class="steps">
+      <li class="rise"><div><b>Send me pictures, the location and a description.</b><span>Text is easiest. A few photos from different angles help.</span></div></li>
+      <li class="rise"><div><b>I look it over and get back to you.</b><span>A straight answer on what the job takes.</span></div></li>
+      <li class="rise"><div><b>I bring the right machine.</b><span>Compact equipment fits through gates and side yards.</span></div></li>
+    </ol>
+    <p class="area rise">I work in the Poconos, Pennsylvania.</p>
+  </div>
+</section>
+
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow">Free estimate</p>
+      <h2 id="h-ask">Tell me about the job</h2>
+      <p class="lede">This opens a text to me, written out. Add your pictures there and hit send.</p>
+    </div>
+    <form id="estimate" class="rise" novalidate>
+      <div class="field">
+        <label for="name">Your name <small>(optional)</small></label>
+        <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine">
+      </div>
+      <fieldset class="field">
+        <legend>What's the job? <small>(pick any)</small></legend>
         <div class="chips">
-          <label class="chip"><input type="checkbox" name="job" value="Trenching / excavation"><span>Trenching / excavation</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Concrete breaking"><span>Concrete breaking</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Driveway / patio tear-out"><span>Driveway / patio tear-out</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Grading / gravel"><span>Grading / gravel</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Shrub removal / cleanup"><span>Shrub removal / cleanup</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Tight access"><span>Tight access</span></label>
-          <label class="chip"><input type="checkbox" name="job" value="Something else"><span>Something else</span></label>
+          <input type="checkbox" name="job" id="j1" value="Trenching / excavation"><label for="j1">Trenching / excavation</label>
+          <input type="checkbox" name="job" id="j2" value="Concrete breaking"><label for="j2">Concrete breaking</label>
+          <input type="checkbox" name="job" id="j3" value="Driveway / patio tear-out"><label for="j3">Driveway / patio tear-out</label>
+          <input type="checkbox" name="job" id="j4" value="Grading / gravel"><label for="j4">Grading / gravel</label>
+          <input type="checkbox" name="job" id="j5" value="Shrub removal / cleanup"><label for="j5">Shrub removal / cleanup</label>
+          <input type="checkbox" name="job" id="j6" value="Tight access"><label for="j6">Tight access</label>
+          <input type="checkbox" name="job" id="j7" value="Something else"><label for="j7">Something else</label>
         </div>
       </fieldset>
-      <label class="field"><span>Where's the job?</span><input name="loc" autocomplete="street-address" placeholder="Town or address" aria-describedby="locErr"></label>
-      <p class="err" id="locErr" aria-live="polite">Add the town or address so I know where the job is.</p>
-      <label class="field"><span>Tell me about the work</span><textarea name="desc" aria-describedby="descErr" placeholder="What needs to come out, how big, how to get to it"></textarea></label>
-      <p class="err" id="descErr" aria-live="polite">A sentence or two about the work, please.</p>
-      <button class="btn btn-fill" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Open my text to Steve</button>
-      <p class="handoff">Opens your messages app with this written out. Attach your pictures, then hit send.</p>
-      <div class="composed" id="composed" hidden aria-live="polite">
-        <p>On a computer? Text this to <a href="tel:+19175257878">917-525-7878</a> from your phone, with your pictures:</p>
-        <pre id="composedText"></pre>
-        <button type="button" class="copy" id="copyMsg">Copy message</button>
+      <div class="field" id="f-loc">
+        <label for="loc">Where's the job?</label>
+        <input type="text" id="loc" name="loc" autocomplete="street-address" maxlength="100" placeholder="Town or address" aria-describedby="e-loc">
+        <p class="err" id="e-loc">Add the town or address so I know where the job is.</p>
+      </div>
+      <div class="field" id="f-desc">
+        <label for="desc">Tell me about the work</label>
+        <textarea id="desc" name="desc" maxlength="600" placeholder="What needs to come out, how big, how to get to it" aria-describedby="e-desc"></textarea>
+        <p class="err" id="e-desc">A sentence or two about the work, please.</p>
+      </div>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Steve</button>
+      <p class="after">Opens your messages with this written out. Attach your pictures, then send.</p>
+      <div class="sent" id="sent" role="status" hidden>
+        <p>Didn't open your messages? Text this to <a href="tel:+19175257878">917-525-7878</a> from your phone, with your pictures:</p>
+        <pre id="msg"></pre>
+        <button type="button" class="copy" id="copy">Copy message</button>
       </div>
     </form>
   </div>
 </section>
 
-<section class="proof" aria-labelledby="proofH">
-  <svg class="seam" id="seam2" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;top:0;left:0"></svg>
+<section class="on-navy close" aria-labelledby="h-close">
   <div class="wrap">
-    <h2 id="proofH">Recent work</h2>
-    <div class="photo">
-      <img src="img/work-01.webp" srcset="img/work-01.webp 960w, img/work-01-1520.webp 1520w" sizes="(min-width:1024px) 1108px, (min-width:800px) 760px, calc(100vw - 40px)" width="960" height="901" loading="lazy" decoding="async" draggable="false"
-        alt="A cleared and graded lot with a Bobcat mini excavator, a tracked loader and a laser level on a tripod">
+    <div class="rise">
+      <h2 id="h-close">Have a project coming up?</h2>
+      <p class="who-line">Or need help with part of a job? Call or text Steve.</p>
     </div>
-  </div>
-  <div class="dirt-close">
-    <canvas class="dirt" id="dirtClose" aria-label="More soil to dig. Drag to dig." role="img"></canvas>
-    <div class="still" aria-hidden="true"></div>
-  </div>
-</section>
-
-<section class="close" aria-labelledby="closeH">
-  <div class="wrap">
-    <a class="btn btn-line fb" href="https://www.facebook.com/profile.php?id=100000051669923" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21z"/></svg>Click to see more of my work.</a>
-    <h2 id="closeH">Have a project coming up?</h2>
-    <p>Or need help with part of a job? Text me the pictures and the location.</p>
-    <div class="actions"><a class="btn btn-fill" id="closeText" href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work.">Text me</a></div>
-    <a class="num" href="tel:+19175257878">or call Steve at 917-525-7878</a>
+    <a class="bigtel rise" href="tel:+19175257878"><svg aria-hidden="true"><use href="#i-phone"/></svg>917-525-7878</a>
   </div>
 </section>
 </main>
@@ -343,490 +412,90 @@ FORM: (no concept roll or seed: unattended pitch-site build, world chosen from t
       <a href="mailto:RichmondEquipmentRental@gmail.com">RichmondEquipmentRental@gmail.com</a>
       <a href="https://www.facebook.com/profile.php?id=100000051669923" rel="noopener">Facebook</a>
     </nav>
-    <span>© 2026 Richmond Equipment Rental LLC</span>
   </div>
 </footer>
 
+<a class="float" id="float" data-sms href="sms:+19175257878?&amp;body=Hi%20Steve%2C%20I%27d%20like%20an%20estimate.%20I%27ll%20send%20pictures%2C%20the%20location%20and%20a%20description%20of%20the%20work." aria-label="Text Steve"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
-/* ---------- contact wiring ---------- */
+/* ===== Config ===== */
+var CONFIG = {
+  PHONE: '+19175257878',
+  FLOAT: true  // the floating text circle; false removes it
+};
+document.documentElement.classList.add('js');
+
+/* ===== Hero H1 bounce-in: split into letters (JS only, so no-JS and reduced motion keep the plain heading) ===== */
 (function(){
-  var NUM = '+19175257878';
-  function sms(body){ return 'sms:' + NUM + '?&body=' + encodeURIComponent(body); }
-  window.__sms = sms;
-  var f = document.getElementById('estimate');
-  f.addEventListener('submit', function(e){
-    e.preventDefault();
-    var el = f.elements, name = el.name.value.trim(), loc = el.loc.value.trim(), desc = el.desc.value.trim();
-    var jobs = [].slice.call(f.querySelectorAll('[name=job]:checked')).map(function(i){ return i.value; });
-    var ok = true;
-    [['loc', loc], ['desc', desc]].forEach(function(p){
-      document.getElementById(p[0] + 'Err').classList.toggle('on', !p[1]);
-      el[p[0]].setAttribute('aria-invalid', p[1] ? 'false' : 'true');
-      if (!p[1]) ok = false;
+  var h=document.getElementById('h1');
+  if(!h||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var plain=h.innerHTML,i=0,last=null;
+  h.setAttribute('aria-label',h.textContent.replace(/\s+/g,' ').trim());
+  function split(node,into){
+    [].slice.call(node.childNodes).forEach(function(n){
+      if(n.nodeType===3){
+        n.textContent.split(/(\s+)/).forEach(function(part){
+          if(!part)return;
+          if(/^\s+$/.test(part)){into.appendChild(document.createTextNode(' '));return}
+          var w=document.createElement('span');w.className='w';w.setAttribute('aria-hidden','true');
+          for(var k=0;k<part.length;k++){var c=document.createElement('span');c.className='c';c.style.setProperty('--i',i++);c.textContent=part[k];w.appendChild(c);last=c}
+          into.appendChild(w);
+        });
+      }else if(n.nodeType===1){var copy=n.cloneNode(false);split(n,copy);into.appendChild(copy)}
     });
-    if (!ok) { (loc ? el.desc : el.loc).focus(); return; }
-    var lines = ['Hi Steve' + (name ? ', this is ' + name : '') + '. I\'d like an estimate.'];
-    if (jobs.length) lines.push('Job: ' + jobs.join(', '));
-    lines.push('Location: ' + loc);
-    lines.push('Work: ' + desc);
+  }
+  var frag=document.createDocumentFragment();split(h,frag);h.textContent='';h.appendChild(frag);
+  // once the last letter lands, put the plain heading back so kerning and text selection return
+  if(last)last.addEventListener('animationend',function(){h.innerHTML=plain;h.removeAttribute('aria-label')});
+})();
+
+/* ===== Estimate form: composes a text to Steve ===== */
+(function(){
+  var form=document.getElementById('estimate');if(!form)return;
+  function val(id){return document.getElementById(id).value.trim()}
+  function mark(id,bad){var f=document.getElementById(id);f.classList.toggle('bad',bad);f.querySelector('input,textarea').setAttribute('aria-invalid',bad?'true':'false')}
+  form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim())f.classList.remove('bad')});
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=val('name'),loc=val('loc'),desc=val('desc');
+    var jobs=[].map.call(form.querySelectorAll('input[name=job]:checked'),function(i){return i.value});
+    mark('f-loc',!loc);mark('f-desc',!desc);
+    if(!loc){document.getElementById('loc').focus();return}
+    if(!desc){document.getElementById('desc').focus();return}
+    var lines=['Hi Steve'+(name?', this is '+name:'')+". I'd like an estimate."];
+    if(jobs.length)lines.push('Job: '+jobs.join(', '));
+    lines.push('Location: '+loc);
+    lines.push('Work: '+desc);
     lines.push("I'll attach pictures.");
-    var msg = lines.join('\n');
-    /* computers often can't open a text, so the written message stays on screen to copy or retype */
-    document.getElementById('composed').hidden = false;
-    document.getElementById('composedText').textContent = msg;
-    location.href = sms(msg);
+    var msg=lines.join('\n');
+    document.getElementById('msg').textContent=msg;
+    location.href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
+    // if no messages app opened (computers, some in-app browsers), the message stays on screen to copy
+    setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
-  ['loc','desc'].forEach(function(n){
-    f.elements[n].addEventListener('input', function(){ if (f.elements[n].value.trim()) { document.getElementById(n + 'Err').classList.remove('on'); f.elements[n].setAttribute('aria-invalid', 'false'); } });
-  });
-  document.getElementById('copyMsg').addEventListener('click', function(){
-    var b = this, t = document.getElementById('composedText').textContent;
-    try { navigator.clipboard.writeText(t).then(function(){ b.textContent = 'Copied'; }, function(){ b.textContent = 'Select the text above to copy'; }); }
-    catch (_) { b.textContent = 'Select the text above to copy'; }
+  document.getElementById('copy').addEventListener('click',function(){
+    var b=this,t=document.getElementById('msg').textContent;
+    function fail(){b.textContent='Select the text above to copy'}
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied'},fail)}catch(_){fail()}
   });
 })();
 
-/* ---------- strata seams (organic soil edges, drawn once) ---------- */
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
 (function(){
-  function edge(svg, fill, seed){
-    var d = 'M0 0H1200';
-    for (var x = 1200; x >= 0; x -= 20)
-      d += 'L' + x + ' ' + (14 + Math.sin(x * .011 + seed) * 5 + Math.sin(x * .037 + seed * 2) * 3 + Math.sin(x * .09 + seed * 3) * 1.5).toFixed(1);
-    svg.innerHTML = '<path d="' + d + 'Z" fill="' + fill + '"/>';
-  }
-  var css = getComputedStyle(document.documentElement);
-  edge(document.getElementById('seam1'), css.getPropertyValue('--soil').trim(), 1.3);
-  edge(document.getElementById('seam2'), css.getPropertyValue('--soil-2').trim(), 4.1);
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){var on=pastHero&&!formIn;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('estimate'));
+  sync();
 })();
 
-/* ---------- the dirt: soil you dig with an excavator bucket ---------- */
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
 (function(){
-  var TUNE = {
-    GRADE: 0.40,        // laser grade height, share of canvas height
-    REPOSE: .75,        // max height step between columns, x column width (angle of repose)
-    RELAX: 5,           // slump passes per frame
-    SPRING: 140,        // how hard the bucket chases the finger
-    DAMP: 13,
-    IDLE_MS: 2600,      // hand back to autoplay after this long untouched
-    GRAIN_VOL: 5,       // px^2 of soil per flying grain
-    DIG_TILT: -.55,     // bucket angles: teeth down in the soil, curled to carry, tipped to dump
-    CARRY_TILT: .22,
-    DUMP_TILT: -2.1
-  };
-  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var scenes = [];
-
-  function Scene(canvas, opt){
-    this.c = canvas; this.ctx = canvas.getContext('2d'); this.opt = opt || {};
-    this.W = 0; this.H = 0; this.visible = true;
-    this.grains = []; this.load = 0; this.tilt = 0; this.facing = -1;
-    this.bx = 0; this.by = 0; this.vx = 0; this.vy = 0;
-    this.ptr = null; this.lastTouch = -1e9; this.still = 0; this.show = this.opt.auto === false ? 0 : 1;
-    this.auto = { st: 'seek', t: 0, tx: 0, ty: 0, dir: 1, refill: 0 };
-    var s = this;
-    function setPtr(e){
-      var rc = canvas.getBoundingClientRect(), lx = e.clientX - rc.left, ly = e.clientY - rc.top;
-      if (s.clearX && lx < s.clearX && ly < s.H - s.clearH) { s.ptr = null; canvas.style.cursor = 'default'; return; }   // behind the headline: not dirt
-      canvas.style.cursor = '';
-      s.ptr = { x: e.clientX, y: e.clientY }; s.lastTouch = performance.now();
-    }
-    canvas.addEventListener('pointerdown', function(e){ e.preventDefault(); try{ canvas.setPointerCapture(e.pointerId); }catch(_){} setPtr(e); });
-    canvas.addEventListener('pointermove', setPtr);
-    canvas.addEventListener('pointerup', function(e){ if (e.pointerType !== 'mouse') s.ptr = null; s.lastTouch = performance.now(); });
-    canvas.addEventListener('pointercancel', function(){ s.ptr = null; });
-    canvas.addEventListener('pointerleave', function(e){ if (e.pointerType === 'mouse') s.ptr = null; });
-    canvas.addEventListener('dragstart', function(e){ e.preventDefault(); });
-  }
-
-  Scene.prototype.resize = function(){
-    var r = this.c.getBoundingClientRect(), W = Math.round(r.width), H = Math.round(r.height);
-    if (W === this.W && H === this.H) return;   // phones fire resize when the address bar moves: keep the dig
-    this.W = W; this.H = H;
-    var phone = W < 700;
-    this.dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-    this.c.width = W * this.dpr; this.c.height = H * this.dpr;
-    this.cw = phone ? 3 : 4;
-    this.n = Math.ceil(W / this.cw) + 2;
-    this.r = Math.max(17, Math.min(30, H * .11, W * .055));
-    this.cap = this.r * this.r * 2.4;
-    this.grade = phone ? H * TUNE.GRADE : Math.min(H * TUNE.GRADE, 150);
-    /* when the canvas sits behind the headline (desktop), keep dirt and the autoplay bucket clear of the text */
-    this.clearX = 0; this.clearH = H;
-    var cp = this.opt.copy;
-    if (cp) {
-      var kids = cp.querySelectorAll('h1,.promise,.btn'), right = 0, bottom = 0, rg = document.createRange();
-      for (var q = 0; q < kids.length; q++) {
-        var kr = kids[q].getBoundingClientRect();
-        if (!kids[q].classList.contains('btn')) { rg.selectNodeContents(kids[q]); kr = rg.getBoundingClientRect(); }   // the text, not the block
-        right = Math.max(right, kr.right); bottom = Math.max(bottom, kr.bottom);
-      }
-      if (bottom - r.top > 0) { this.clearX = right - r.left + 40; this.clearH = H - (bottom - r.top) - 40; }
-    }
-    /* the bank under the work photo buries the photo's bottom edge */
-    this.photoY = 0;
-    if (this.opt.photo) { this.photoY = this.opt.photo.getBoundingClientRect().bottom - r.top; this.grade = H - this.photoY + 14; }
-    this.rep = new Float32Array(this.n);
-    for (var q2 = 0, v = 1; q2 < this.n; q2++) { v += (Math.random() - .5) * .35; v = Math.max(.85, Math.min(1.15, v)); this.rep[q2] = v; }
-    this.maxGrains = phone ? 500 : 1100;
-    this.h = new Float32Array(this.n);
-    this.profile();
-    this.texture();
-    this.bx = this.clearX + (W - this.clearX) * .6; this.by = H - this.grade - this.r * 2.2;
-    this.c.classList.add('ready');
-  };
-
-  Scene.prototype.profile = function(){
-    var H = this.H, g = this.grade, n = this.n, cw = this.cw, W = this.W;
-    var x0 = this.clearX, span = W - x0, bumps = [], k = this.clearX ? 3 : 2, unit = Math.min(H, 260) * (this.photoY ? .35 : 1);
-    for (var b = 0; b < k; b++) {
-      var ba = unit * (.16 + Math.random() * .14);
-      bumps.push({ x: x0 + (b + .5 + (Math.random() - .5) * .5) / k * span, a: ba, w: Math.max(ba * 2.2, span * (.05 + Math.random() * .05)) });   // wide enough to never slump into a cone
-    }
-    if (this.clearX) bumps.push({ x: x0 + span * .6, a: H * .3, w: span * .2 });   // the spoil pile
-    var trench = { x: x0 + Math.random() * span, w: Math.max(24, span * .04) };
-    if (this.photoY) trench.w = 0;
-    var seed = Math.random() * 10;
-    for (var i = 0; i < n; i++) {
-      var x = i * cw, y = g + Math.sin(x * .013 + seed) * unit * .03 + Math.sin(x * .041 + seed * 3) * unit * .012;
-      for (b = 0; b < bumps.length; b++) { var d = (x - bumps[b].x) / bumps[b].w; y += bumps[b].a * Math.exp(-d * d); }
-      if (trench.w) { var t = (x - trench.x) / trench.w; y -= unit * .1 * Math.exp(-t * t * t * t); }
-      if (x < this.clearX) y = Math.min(y, this.clearH);
-      this.h[i] = Math.max(8, Math.min(H - 6, y));
-    }
-    /* level the average to a little above grade, so there are mounds to cut and dips to fill */
-    var i0 = Math.ceil(x0 / cw), sum = 0;
-    for (i = i0; i < n; i++) sum += this.h[i];
-    var shift = sum / (n - i0) - (g + (this.clearX ? H * .1 : unit * .06));
-    for (i = i0; i < n; i++) this.h[i] = Math.max(8, this.h[i] - shift);
-    this.slump(1500);
-  };
-
-  /* one 256px grain-and-pebble tile, drawn once and shared by every scene */
-  var tile = null;
-  function grainTile(){
-    if (tile) return tile;
-    var T = 256; tile = document.createElement('canvas'); tile.width = tile.height = T;
-    var x = tile.getContext('2d');
-    var cols = ['rgba(40,26,14,.55)', 'rgba(150,112,72,.5)', 'rgba(30,20,12,.35)', 'rgba(176,140,98,.35)'];
-    for (var i = 0, N = T * T / 9; i < N; i++) {
-      x.fillStyle = cols[i & 3];
-      x.fillRect(Math.random() * T, Math.random() * T, Math.random() < .8 ? 1 : 2, Math.random() < .8 ? 1 : 2);
-    }
-    for (i = 0, N = T * T / 1400; i < N; i++) {   // pebbles with body; drawn 9 times so they wrap across tile edges
-      var px = Math.random() * T, py = Math.random() * T, rx = 1.5 + Math.random() * 3.5, ry = rx * (.55 + Math.random() * .3), rot = Math.random();
-      var tone = Math.random() < .5 ? [138, 126, 110] : [124, 96, 70];
-      for (var ox = -T; ox <= T; ox += T) for (var oy = -T; oy <= T; oy += T) {
-        var cx = px + ox, cy = py + oy; if (cx < -8 || cx > T + 8 || cy < -8 || cy > T + 8) continue;
-        var pg = x.createRadialGradient(cx - rx * .3, cy - ry * .4, .2, cx, cy, rx);
-        pg.addColorStop(0, 'rgb(' + (tone[0] + 18) + ',' + (tone[1] + 15) + ',' + (tone[2] + 12) + ')');
-        pg.addColorStop(1, 'rgb(' + (tone[0] - 50) + ',' + (tone[1] - 50) + ',' + (tone[2] - 46) + ')');
-        x.fillStyle = 'rgba(25,16,9,.35)'; x.beginPath(); x.ellipse(cx + .8, cy + 1, rx, ry, 0, 0, 7); x.fill();
-        x.fillStyle = pg; x.beginPath(); x.ellipse(cx, cy, rx, ry, rot, 0, 7); x.fill();
-      }
-    }
-    return tile;
-  }
-
-  Scene.prototype.texture = function(){
-    var W = this.W, H = this.H, d = this.dpr, t = document.createElement('canvas');
-    t.width = W * d; t.height = H * d;
-    var x = t.getContext('2d'); x.scale(d, d);
-    var gr = x.createLinearGradient(0, 0, 0, H);
-    gr.addColorStop(0, '#80583a'); gr.addColorStop(.35, '#6a4629'); gr.addColorStop(.75, '#4f3522'); gr.addColorStop(1, '#3d2a1b');
-    x.fillStyle = gr; x.fillRect(0, 0, W, H);
-    x.fillStyle = x.createPattern(grainTile(), 'repeat'); x.fillRect(0, 0, W, H);
-    var fade = x.createLinearGradient(0, H * .78, 0, H);
-    fade.addColorStop(0, 'rgba(61,42,27,0)'); fade.addColorStop(1, 'rgba(61,42,27,1)');
-    x.fillStyle = fade; x.fillRect(0, H * .78, W, H * .22);
-    this.tex = t;
-  };
-
-  Scene.prototype.col = function(x){ return Math.max(0, Math.min(this.n - 1, Math.round(x / this.cw))); };
-  Scene.prototype.surf = function(x){ return this.H - this.h[this.col(x)]; };
-
-  /* --- autoplay: cut the high spots to the laser grade and fill the low spots; once it's level, dig a trench and heap
-         the spoil beside it, which gives the next round something to grade. The bucket never leaves the screen. --- */
-  Scene.prototype.autoplay = function(dt){
-    var a = this.auto, H = this.H, W = this.W, g = this.grade, r = this.r, cw = this.cw, s = this;
-    a.t += dt;
-    var i0 = Math.max(4, Math.ceil(this.clearX / cw) + 2), xMin = this.clearX + r * 1.5, xMax = W - r * 1.5;
-    function hi(){ var bi = -1, bv = 5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v > bv) { bv = v; bi = i; } } return bi; }
-    function lo(){ var bi = -1, bv = -5; for (var i = i0; i < s.n - 4; i++) { var v = s.h[i] - g; if (v < bv) { bv = v; bi = i; } } return bi; }
-    var near = function(){ return Math.abs(s.bx - a.tx) < 6 && Math.abs(s.by - a.ty) < 6; };
-    var lift = H - g - r * 4.2;
-    switch (a.st) {
-      case 'seek':
-        var i = hi();
-        a.deep = i < 0;
-        if (a.deep) { a.dir = Math.random() < .5 ? -1 : 1; a.tx = xMin + r * 3 + Math.random() * Math.max(0, xMax - xMin - r * 6); }
-        else { a.dir = (i * cw > (W + this.clearX) / 2) ? -1 : 1; a.tx = i * cw - a.dir * r * 2.5; }
-        a.ty = Math.min(this.surf(a.tx) - r * 1.2, lift); a.st = 'go'; a.t = 0;
-        break;
-      case 'go': if (near() || a.t > 2.5) { a.st = 'plunge'; a.ty = H - g - r * (a.deep ? .5 : 1.3) + 2; a.t = 0; } break;
-      case 'plunge': if (near() || a.t > 1.2) { a.st = 'drag'; a.tx += a.dir * r * (a.deep ? 3.5 : 6); a.t = 0; } break;
-      case 'drag': if (near() || this.load >= this.cap * .98 || a.t > 2.2) { a.st = 'up'; a.tx = this.bx; a.ty = Math.min(this.surf(this.bx) - r * 2.4, lift); a.t = 0; } break;
-      case 'up':
-        if (near() || a.t > 1.4) {
-          var j = a.deep ? -1 : lo();
-          if (j >= 0) a.tx = j * cw;
-          else { a.tx = this.bx + a.dir * r * 5; if (a.tx > xMax || a.tx < xMin) a.tx = this.bx - a.dir * r * 5; }
-          a.ty = Math.min(this.surf(a.tx) - r * 2.4, lift);
-          a.st = 'carry'; a.t = 0;
-        }
-        break;
-      case 'carry': if (near() || a.t > 3) { a.st = 'dump'; a.t = 0; } break;
-      case 'dump':
-        this.dumping = true;
-        if (this.load <= 1 || a.t > 3) { this.dumping = false; a.st = 'seek'; a.t = 0; }
-        break;
-    }
-    return { x: Math.max(xMin, Math.min(xMax, a.tx)), y: a.ty };
-  };
-
-  Scene.prototype.step = function(dt, now){
-    var W = this.W, H = this.H, r = this.r, cw = this.cw, h = this.h, n = this.n, i;
-    /* where the bucket wants to be */
-    var target, user = this.ptr && (now - this.lastTouch < 4000);
-    if (user) {
-      var rect = this.c.getBoundingClientRect();     // read every frame: the page can scroll under the finger
-      target = { x: this.ptr.x - rect.left, y: this.ptr.y - rect.top - r * .5 };
-      this.dumping = false;
-      this.auto.st = 'seek';
-    } else if (this.opt.auto !== false && now - this.lastTouch > TUNE.IDLE_MS) {
-      target = this.autoplay(dt);
-    } else {
-      target = { x: this.bx, y: this.by };
-    }
-    target.y = Math.min(Math.max(target.y, r * 1.2), H - r * 1.4);
-    this.show += ((user || this.opt.auto !== false ? 1 : 0) - this.show) * Math.min(1, dt * 4);   // the photo's bank only shows the bucket while you dig
-    /* hydraulic follow */
-    this.vx += (target.x - this.bx) * TUNE.SPRING * dt; this.vy += (target.y - this.by) * TUNE.SPRING * dt;
-    var damp = Math.exp(-TUNE.DAMP * dt); this.vx *= damp; this.vy *= damp;
-    var sp = Math.hypot(this.vx, this.vy), MAX = user ? 1600 : 420;
-    if (sp > MAX) { this.vx *= MAX / sp; this.vy *= MAX / sp; sp = MAX; }
-    this.bx += this.vx * dt; this.by += this.vy * dt;
-    if (Math.abs(this.vx) > 25) this.facing = this.vx > 0 ? 1 : -1;
-
-    /* user dumps by holding the bucket still in the air */
-    var cx = this.bx, cy = this.by + r * .4, rr = r * .9;
-    var airborne = cy + rr < this.surf(cx) - 2;
-    if (user) { this.still = (sp < 70 && airborne) ? this.still + dt : 0; this.dumping = this.still > .35; }
-    var tt = this.dumping && airborne ? TUNE.DUMP_TILT : (!airborne ? TUNE.DIG_TILT : (this.load > this.cap * .2 ? TUNE.CARRY_TILT : 0));
-    this.tilt += (tt - this.tilt) * Math.min(1, dt * 6);
-
-    /* dig: soil above the bucket's lip comes out; what doesn't fit is shoved ahead */
-    if (!this.dumping) {
-      var i0 = this.col(cx - rr), i1 = this.col(cx + rr), pushed = 0;
-      for (i = i0; i <= i1; i++) {
-        var dx = i * cw - cx; if (Math.abs(dx) >= rr) continue;
-        var floorY = cy + Math.sqrt(rr * rr - dx * dx), nh = H - floorY;
-        if (nh < h[i]) {
-          var area = (h[i] - nh) * cw;
-          if (area > TUNE.GRAIN_VOL && Math.random() < .25 && this.grains.length < this.maxGrains) {   // a clod kicked up by the teeth
-            this.grain(i * cw, H - nh, this.vx * .5 + (Math.random() - .5) * 80, -80 - Math.random() * 140); area -= TUNE.GRAIN_VOL;
-          }
-          var take = Math.min(area, this.cap - this.load);
-          this.load += take; pushed += area - take; h[i] = Math.max(4, nh);
-        }
-      }
-      if (pushed > 0) {
-        var j = this.col(cx + this.facing * (rr + cw * 2));
-        h[j] += pushed / cw * .6; h[Math.max(0, Math.min(n - 1, j + this.facing))] += pushed / cw * .4;
-      }
-    }
-    /* spill: a trickle while moving, a pour when tipped */
-    if (this.load > 0 && airborne) {
-      var rate = this.dumping ? this.cap * 1.7 : (sp > 300 ? this.cap * .12 : this.cap * .02);
-      var amt = Math.min(this.load, rate * dt), count = Math.floor(amt / TUNE.GRAIN_VOL + Math.random());
-      var mp = this.local(-.1, -.02), mx = mp.x, my = mp.y + (this.dumping ? r * .4 : 0);   // the bucket's mouth
-      for (i = 0; i < count && this.grains.length < this.maxGrains; i++)
-        this.grain(mx + (Math.random() - .5) * r * .9, my + Math.random() * 4, this.vx * .6 + (Math.random() - .5) * 40, this.vy * .4 + Math.random() * 40);
-      this.load -= count * TUNE.GRAIN_VOL; if (this.load < 0) this.load = 0;
-    }
-    /* flying grains land and become ground */
-    var G = this.grains;
-    for (i = G.length - 1; i >= 0; i--) {
-      var p = G[i]; p.vy += 1100 * dt; p.x += p.vx * dt; p.y += p.vy * dt;
-      if (p.x < -10 || p.x > W + 10) { G.splice(i, 1); continue; }
-      var c = this.col(p.x);
-      if (p.y >= H - h[c]) { h[c] = Math.min(H - 4, h[c] + TUNE.GRAIN_VOL / cw); G.splice(i, 1); }
-    }
-    this.slump(TUNE.RELAX);
-  };
-
-
-  /* slump to the angle of repose, then round off crests (both keep the amount of soil the same) */
-  Scene.prototype.slump = function(passes){
-    var h = this.h, n = this.n, msb = this.cw * TUNE.REPOSE, k, a, t;
-    for (var pass = 0; pass < passes; pass++) {
-      var fwd = pass & 1;
-      for (k = 0; k < n - 1; k++) {
-        a = fwd ? k : n - 2 - k; var d = h[a] - h[a + 1], ms = msb * this.rep[a];
-        if (d > ms) { t = (d - ms) * .3; h[a] -= t; h[a + 1] += t; }
-        else if (d < -ms) { t = (-d - ms) * .3; h[a] += t; h[a + 1] -= t; }
-      }
-      for (k = 1, a = h[0]; k < n - 1; k++) { var cur = h[k]; h[k] += (a + h[k + 1] - 2 * cur) * .11; a = cur; }
-    }
-  };
-
-  /* a point on the bucket (in bucket units) to canvas coordinates, matching drawBucket's transform */
-  Scene.prototype.local = function(lx, ly){
-    var s = this.r * 2.1, c = Math.cos(this.tilt), sn = Math.sin(this.tilt);
-    var rx = (lx * c - ly * sn) * s, ry = (lx * sn + ly * c) * s;
-    return { x: this.bx - this.facing * rx, y: this.by - this.r * .55 + ry };
-  };
-
-  Scene.prototype.grain = function(x, y, vx, vy){
-    this.grains.push({ x: x, y: y, vx: vx, vy: vy, s: Math.random() < .7 ? 1.6 : 2.6, c: (Math.random() * 3) | 0 });
-  };
-
-  var GRAIN_COLORS = ['#8c6542', '#a47a52', '#6d4a2d'];
-
-  Scene.prototype.draw = function(now){
-    var x = this.ctx, W = this.W, H = this.H, h = this.h, cw = this.cw, n = this.n, r = this.r, i;
-    x.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
-    x.clearRect(0, 0, W, H);
-    /* soil body */
-    x.beginPath(); x.moveTo(0, H); x.lineTo(0, H - h[0]);
-    for (i = 1; i < n - 1; i++) { var mx = (i + .5) * cw, my = H - (h[i] + h[i + 1]) / 2; x.quadraticCurveTo(i * cw, H - h[i], mx, my); }
-    x.lineTo(W, H - h[n - 1]); x.lineTo(W, H); x.closePath();
-    x.save(); x.clip();
-    x.drawImage(this.tex, 0, 0, W, H);
-    /* topsoil band: darker, looser earth along the surface */
-    x.lineWidth = 9; x.strokeStyle = 'rgba(52,34,19,.55)'; x.lineJoin = 'round';
-    x.beginPath(); x.moveTo(0, H - h[0]); for (i = 1; i < n; i++) x.lineTo(i * cw, H - h[i]); x.stroke();
-    x.lineWidth = 22; x.strokeStyle = 'rgba(52,34,19,.18)'; x.stroke();
-    x.restore();
-
-    if (this.opt.laser !== false) this.drawLaser(x, now);
-
-    /* grains */
-    var G = this.grains;
-    for (i = 0; i < G.length; i++) { var p = G[i]; x.fillStyle = GRAIN_COLORS[p.c]; x.fillRect(p.x - p.s / 2, p.y - p.s / 2, p.s, p.s); }
-
-    this.drawBucket(x);
-  };
-
-  /* rotary laser on a tripod at the far end, like the one in his photo; the beam runs toward the work and stops
-     at the first soil face (or the bucket) it hits */
-  Scene.prototype.drawLaser = function(x, now){
-    var W = this.W, H = this.H, gy = H - this.grade, tx = W - (W < 700 ? 24 : 40), foot = this.surf(tx);
-    var endX = 0, hitBucket = Math.abs(this.by + this.r * .4 - gy) < this.r * 1.1 && this.bx < tx;
-    for (var i = this.col(tx) - 3; i >= 0; i--) {
-      var X = i * this.cw;
-      if (hitBucket && X <= this.bx + this.r * .7) { endX = this.bx + this.r * .7; break; }
-      if (H - this.h[i] < gy - .5) { endX = X; break; }
-    }
-    x.strokeStyle = 'rgba(255,90,69,.55)'; x.lineWidth = 1.2;
-    x.beginPath(); x.moveTo(tx - 4, gy); x.lineTo(endX, gy); x.stroke();
-    if (endX > 0) {
-      var sg = x.createRadialGradient(endX, gy, 0, endX, gy, 6);
-      sg.addColorStop(0, 'rgba(255,220,205,1)'); sg.addColorStop(.4, 'rgba(255,90,69,.85)'); sg.addColorStop(1, 'rgba(255,90,69,0)');
-      x.fillStyle = sg; x.fillRect(endX - 6, gy - 6, 12, 12);
-    }
-    /* tripod */
-    x.strokeStyle = '#c9ccce'; x.lineWidth = 1.6; x.lineCap = 'round';
-    if (foot > gy + 6) {
-      x.beginPath();
-      x.moveTo(tx, gy + 6); x.lineTo(tx - 9, foot + 1);
-      x.moveTo(tx, gy + 6); x.lineTo(tx + 9, foot + 1);
-      x.moveTo(tx, gy + 6); x.lineTo(tx + 1, foot + 1);
-      x.stroke();
-      x.fillStyle = '#e8432f'; x.fillRect(tx - 10.5, foot - 3, 3, 3); x.fillRect(tx + 7.5, foot - 3, 3, 3);
-    }
-    /* head: yellow body, dark window, blinking emitter */
-    x.fillStyle = '#e9ad06'; x.beginPath(); x.roundRect(tx - 6, gy - 7, 12, 13, 2); x.fill();
-    x.fillStyle = '#2b2b28'; x.fillRect(tx - 5, gy - 2, 10, 4);
-    var blink = (now / 1000 * 10) % 1 < .5;
-    x.fillStyle = blink ? '#ffd2c8' : '#ff5a45'; x.fillRect(tx - 5, gy - .8, 2.5, 1.6);
-  };
-
-  /* side view of a digging bucket: steel side plate, cutting edge and tooth, pins, a stub of yellow stick */
-  Scene.prototype.drawBucket = function(x){
-    if (this.show < .02) return;
-    var s = this.r * 2.1, f = this.facing, r = this.r;
-    x.save(); x.globalAlpha = this.show;
-    /* contact shadow on the soil, softer the higher the bucket */
-    var sy = this.surf(this.bx), lift = Math.max(0, sy - (this.by + r));
-    var sa = .32 * Math.max(0, 1 - lift / (r * 5));
-    if (sa > .01) { x.fillStyle = 'rgba(20,12,6,' + sa.toFixed(3) + ')'; x.beginPath(); x.ellipse(this.bx, sy + 1, s * .45 * (1 + lift / (r * 8)), s * .09, 0, 0, 7); x.fill(); }
-    /* stick: solid, out of the top of the dirt strip toward the machine, fading only in the last 28px */
-    var pin = this.local(.2, .1), front = this.local(-.28, .1);
-    var dxs = -f * .5, dys = -1, dl = Math.hypot(dxs, dys); dxs /= dl; dys /= dl;
-    var len = Math.min((pin.y + 40) / -dys, s * 3.4), top = { x: pin.x + dxs * len, y: pin.y + dys * len };
-    var fade = x.createLinearGradient(pin.x, pin.y, top.x, top.y), cut = Math.min(28, len * .3) / len;   // fades out where it leaves the strip, or after ~3 bucket lengths
-    fade.addColorStop(0, '#d39a00'); fade.addColorStop(1 - cut, '#d39a00'); fade.addColorStop(1, 'rgba(211,154,0,0)');
-    x.lineCap = 'butt';
-    x.strokeStyle = fade; x.lineWidth = s * .3;
-    x.beginPath(); x.moveTo(pin.x, pin.y); x.lineTo(top.x, top.y); x.stroke();
-    var shade = x.createLinearGradient(pin.x, pin.y, top.x, top.y);   // shading down one side of the stick
-    shade.addColorStop(0, 'rgba(120,84,0,.35)'); shade.addColorStop(1 - cut, 'rgba(120,84,0,.35)'); shade.addColorStop(1, 'rgba(120,84,0,0)');
-    x.strokeStyle = shade; x.lineWidth = s * .08;
-    x.beginPath(); x.moveTo(pin.x + f * s * .1, pin.y); x.lineTo(top.x + f * s * .1, top.y); x.stroke();
-    /* bucket cylinder: dark barrel from up the stick, bright rod down to the dogbone link at the front pin */
-    var cyl = { x: pin.x + dxs * s * 1.2 - f * s * .26, y: pin.y + dys * s * 1.2 };
-    var mid = { x: cyl.x + (front.x - cyl.x) * .55, y: cyl.y + (front.y - cyl.y) * .55 };
-    x.lineCap = 'round';
-    x.strokeStyle = '#2b2b28'; x.lineWidth = s * .13; x.beginPath(); x.moveTo(cyl.x, cyl.y); x.lineTo(mid.x, mid.y); x.stroke();
-    x.strokeStyle = '#c9ccce'; x.lineWidth = s * .06; x.beginPath(); x.moveTo(mid.x, mid.y); x.lineTo(front.x, front.y); x.stroke();
-    x.translate(this.bx, this.by - this.r * .55);
-    x.scale(-f, 1);                                   // the tooth leads in the direction of travel
-    x.rotate(this.tilt);
-    /* load heaped in the mouth */
-    if (this.load > 0) {
-      var lf = Math.min(1, this.load / this.cap);
-      x.fillStyle = '#5c3e25';
-      x.beginPath(); x.moveTo(-s * .5, s * .06);
-      x.quadraticCurveTo(-s * .2, -s * .32 * lf - s * .02, s * .28, s * .04); x.closePath(); x.fill();
-    }
-    /* side plate */
-    var bg = x.createLinearGradient(-s * .5, 0, s * .5, s);
-    bg.addColorStop(0, '#5d6062'); bg.addColorStop(1, '#2f3133');
-    x.fillStyle = bg;
-    x.beginPath();
-    x.moveTo(-s * .48, 0); x.lineTo(s * .34, 0);
-    x.quadraticCurveTo(s * .62, s * .14, s * .56, s * .54);
-    x.quadraticCurveTo(s * .46, s * .96, s * .02, s * .98);
-    x.lineTo(-s * .5, s * .94);
-    x.quadraticCurveTo(-s * .58, s * .5, -s * .48, 0);
-    x.closePath(); x.fill();
-    /* reinforcing rib across the side plate */
-    x.fillStyle = 'rgba(20,21,22,.45)';
-    x.beginPath(); x.moveTo(s * .3, s * .02); x.quadraticCurveTo(s * .44, s * .5, s * .06, s * .84); x.lineTo(-s * .04, s * .8); x.quadraticCurveTo(s * .3, s * .48, s * .18, s * .02); x.closePath(); x.fill();
-    /* wear strip + tooth */
-    x.fillStyle = '#1f2021';
-    x.beginPath(); x.moveTo(s * .02, s * .98); x.lineTo(-s * .5, s * .94); x.lineTo(-s * .52, s * .84); x.lineTo(s * .02, s * .88); x.closePath(); x.fill();
-    x.fillStyle = '#3a3c3e';
-    x.beginPath(); x.moveTo(-s * .5, s * .84); x.lineTo(-s * .8, s * .99); x.lineTo(-s * .5, s * .97); x.closePath(); x.fill();
-    /* pins */
-    x.fillStyle = '#e9ad06';
-    x.beginPath(); x.arc(s * .2, s * .1, s * .07, 0, 7); x.arc(-s * .28, s * .1, s * .07, 0, 7); x.fill();
-    x.restore();
-  };
-
-  /* one shared loop; scenes off screen sleep */
-  var last = 0, running = false;
-  function frame(now){
-    var dt = Math.min(.033, (now - last) / 1000 || .016); last = now;
-    var any = false;
-    for (var i = 0; i < scenes.length; i++) {
-      var s = scenes[i]; if (!s.visible || !s.W) continue; any = true;
-      s.step(dt, now); s.draw(now);
-    }
-    if (any) requestAnimationFrame(frame); else running = false;
-  }
-  function kick(){ if (!running && !reduce) { running = true; last = performance.now(); requestAnimationFrame(frame); } }
-
-  ['dirtHero', 'dirtClose'].forEach(function(id){
-    var c = document.getElementById(id); if (!c || !c.getContext) return;
-    var s = new Scene(c, id === 'dirtHero' ? { copy: document.querySelector('.hero-copy') } : { photo: document.querySelector('.photo img'), auto: false, laser: false }); scenes.push(s); s.resize();
-    if (reduce) { s.draw(0); return; }
-    if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ s.visible = es[0].isIntersecting; if (s.visible) kick(); }).observe(c);
-  });
-  var rz = 0;
-  window.addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ scenes.forEach(function(s){ s.resize(); if (reduce) s.draw(0); }); }, 120); });
-  kick();
-  window.__dirt = scenes;
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
