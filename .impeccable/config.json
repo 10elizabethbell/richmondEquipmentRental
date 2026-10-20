@@ -8,6 +8,15 @@
         "value": "roboto",
         "createdAt": "2026-10-18T01:44:37.053Z",
         "reason": "Ellie's house style (pitch-site ellie-taste.md section 2): system font stack; Roboto is only the Android fallback in that stack"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:54:17.989Z",
+        "reason": "Ellie's pitch-site house rule: calm-photo-style.md item 2 (2026-10-19) requires the faint diagonal band texture"
       }
     ]
   }

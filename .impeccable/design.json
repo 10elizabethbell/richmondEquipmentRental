@@ -1,393 +1,509 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T01:56:14.320770+00:00",
-  "title": "Design System: Richmond Equipment Rental",
+  "generatedAt": "2026-10-20T01:53:37+00:00",
+  "title": "Design System: Richmond Equipment Rental LLC",
   "extensions": {
     "colorMeta": {
-      "site": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Fence Green",
+        "displayName": "Paper",
+        "canonical": "oklch(97.1% 0.005 117.9)",
         "tonalRamp": [
-          "#132b24",
-          "#224e42",
-          "#317261",
-          "#41957f",
-          "#5fbaa1",
-          "#8dcebc",
-          "#b8e0d5",
-          "#e3f3ee"
+          "oklch(15% 0.005 117.9)",
+          "oklch(27% 0.005 117.9)",
+          "oklch(38% 0.005 117.9)",
+          "oklch(49% 0.005 117.9)",
+          "oklch(61% 0.005 117.9)",
+          "oklch(72% 0.005 117.9)",
+          "oklch(84% 0.005 117.9)",
+          "oklch(95% 0.005 117.9)"
         ]
       },
-      "yellow": {
-        "role": "primary",
-        "displayName": "Equipment Yellow",
-        "tonalRamp": [
-          "#3c2d01",
-          "#6e5302",
-          "#a07903",
-          "#d29f04",
-          "#fac41e",
-          "#fcd55f",
-          "#fde59b",
-          "#fef4d7"
-        ]
-      },
-      "yellow-hi": {
-        "role": "primary",
-        "displayName": "Yellow, Lit",
-        "tonalRamp": [
-          "#3d2e00",
-          "#705400",
-          "#a37a00",
-          "#d6a000",
-          "#ffc51a",
-          "#ffd65c",
-          "#ffe599",
-          "#fff5d6"
-        ]
-      },
-      "laser": {
-        "role": "secondary",
-        "displayName": "Grade-Laser Red",
-        "tonalRamp": [
-          "#3d0700",
-          "#700d00",
-          "#a31200",
-          "#d61800",
-          "#ff331a",
-          "#ff6e5c",
-          "#ffa599",
-          "#ffdbd6"
-        ]
-      },
-      "soil": {
+      "card": {
         "role": "neutral",
-        "displayName": "Soil",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
         "tonalRamp": [
-          "#2a1d13",
-          "#4e3622",
-          "#714e32",
-          "#946642",
-          "#b98760",
-          "#cdaa8e",
-          "#e0cab8",
-          "#f2eae3"
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(49% 0 0)",
+          "oklch(61% 0 0)",
+          "oklch(72% 0 0)",
+          "oklch(84% 0 0)",
+          "oklch(95% 0 0)"
         ]
       },
-      "soil-2": {
+      "field": {
         "role": "neutral",
-        "displayName": "Soil, Second Layer",
+        "displayName": "Field Mist",
+        "canonical": "oklch(93.1% 0.011 136.6)",
         "tonalRamp": [
-          "#2a1d13",
-          "#4d3523",
-          "#704d33",
-          "#936543",
-          "#b78662",
-          "#cca98f",
-          "#dfc9b9",
-          "#f2e9e3"
-        ]
-      },
-      "soil-deep": {
-        "role": "neutral",
-        "displayName": "Deep Soil",
-        "tonalRamp": [
-          "#291c15",
-          "#4a3326",
-          "#6c4a37",
-          "#8e6148",
-          "#b28267",
-          "#c8a693",
-          "#ddc7bb",
-          "#f1e9e4"
-        ]
-      },
-      "cream": {
-        "role": "neutral",
-        "displayName": "Cream",
-        "tonalRamp": [
-          "#2f250e",
-          "#56441a",
-          "#7e6325",
-          "#a58131",
-          "#caa44e",
-          "#dabe81",
-          "#e8d7b0",
-          "#f6efe0"
-        ]
-      },
-      "cream-dim": {
-        "role": "neutral",
-        "displayName": "Cream, Dim",
-        "tonalRamp": [
-          "#292214",
-          "#4b3f25",
-          "#6d5b36",
-          "#8f7847",
-          "#b39a65",
-          "#c9b792",
-          "#ddd2bb",
-          "#f2ede4"
+          "oklch(15% 0.011 136.6)",
+          "oklch(27% 0.011 136.6)",
+          "oklch(38% 0.011 136.6)",
+          "oklch(49% 0.011 136.6)",
+          "oklch(61% 0.011 136.6)",
+          "oklch(72% 0.011 136.6)",
+          "oklch(84% 0.011 136.6)",
+          "oklch(95% 0.011 136.6)"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
+        "canonical": "oklch(25.1% 0.033 168.8)",
         "tonalRamp": [
-          "#262217",
-          "#453e2b",
-          "#655a3f",
-          "#847652",
-          "#a79871",
-          "#c0b69a",
-          "#d8d1c0",
-          "#efede6"
+          "oklch(15% 0.033 168.8)",
+          "oklch(27% 0.033 168.8)",
+          "oklch(38% 0.033 168.8)",
+          "oklch(49% 0.033 168.8)",
+          "oklch(61% 0.033 168.8)",
+          "oklch(72% 0.033 168.8)",
+          "oklch(84% 0.033 168.8)",
+          "oklch(95% 0.033 168.8)"
         ]
       },
-      "placeholder": {
+      "body": {
         "role": "neutral",
-        "displayName": "Placeholder",
+        "displayName": "Body",
+        "canonical": "oklch(32.3% 0.026 159.8)",
         "tonalRamp": [
-          "#262118",
-          "#453d2b",
-          "#64583f",
-          "#847452",
-          "#a79572",
-          "#c0b49b",
-          "#d8d0c0",
-          "#efece6"
+          "oklch(15% 0.026 159.8)",
+          "oklch(27% 0.026 159.8)",
+          "oklch(38% 0.026 159.8)",
+          "oklch(49% 0.026 159.8)",
+          "oklch(61% 0.026 159.8)",
+          "oklch(72% 0.026 159.8)",
+          "oklch(84% 0.026 159.8)",
+          "oklch(95% 0.026 159.8)"
         ]
       },
-      "error-text": {
+      "soft": {
         "role": "neutral",
-        "displayName": "Error Text",
+        "displayName": "Soft",
+        "canonical": "oklch(45.3% 0.023 157.2)",
         "tonalRamp": [
-          "#3d0800",
-          "#700f00",
-          "#a31700",
-          "#d61e00",
-          "#ff391a",
-          "#ff725c",
-          "#ffa799",
-          "#ffdcd6"
+          "oklch(15% 0.023 157.2)",
+          "oklch(27% 0.023 157.2)",
+          "oklch(38% 0.023 157.2)",
+          "oklch(49% 0.023 157.2)",
+          "oklch(61% 0.023 157.2)",
+          "oklch(72% 0.023 157.2)",
+          "oklch(84% 0.023 157.2)",
+          "oklch(95% 0.023 157.2)"
+        ]
+      },
+      "fence-green": {
+        "role": "secondary",
+        "displayName": "Fence Green",
+        "canonical": "oklch(37.4% 0.054 169.5)",
+        "tonalRamp": [
+          "oklch(15% 0.054 169.5)",
+          "oklch(27% 0.054 169.5)",
+          "oklch(38% 0.054 169.5)",
+          "oklch(49% 0.054 169.5)",
+          "oklch(61% 0.054 169.5)",
+          "oklch(72% 0.054 169.5)",
+          "oklch(84% 0.054 169.5)",
+          "oklch(95% 0.054 169.5)"
+        ]
+      },
+      "deep-green": {
+        "role": "tertiary",
+        "displayName": "Deep Green",
+        "canonical": "oklch(25.1% 0.033 168.8)",
+        "tonalRamp": [
+          "oklch(15% 0.033 168.8)",
+          "oklch(27% 0.033 168.8)",
+          "oklch(38% 0.033 168.8)",
+          "oklch(49% 0.033 168.8)",
+          "oklch(61% 0.033 168.8)",
+          "oklch(72% 0.033 168.8)",
+          "oklch(84% 0.033 168.8)",
+          "oklch(95% 0.033 168.8)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On Dark",
+        "canonical": "oklch(97.4% 0.006 128.5)",
+        "tonalRamp": [
+          "oklch(15% 0.006 128.5)",
+          "oklch(27% 0.006 128.5)",
+          "oklch(38% 0.006 128.5)",
+          "oklch(49% 0.006 128.5)",
+          "oklch(61% 0.006 128.5)",
+          "oklch(72% 0.006 128.5)",
+          "oklch(84% 0.006 128.5)",
+          "oklch(95% 0.006 128.5)"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On Dark Soft",
+        "canonical": "oklch(87.4% 0.032 154.1)",
+        "tonalRamp": [
+          "oklch(15% 0.032 154.1)",
+          "oklch(27% 0.032 154.1)",
+          "oklch(38% 0.032 154.1)",
+          "oklch(49% 0.032 154.1)",
+          "oklch(61% 0.032 154.1)",
+          "oklch(72% 0.032 154.1)",
+          "oklch(84% 0.032 154.1)",
+          "oklch(95% 0.032 154.1)"
+        ]
+      },
+      "equipment-yellow": {
+        "role": "primary",
+        "displayName": "Equipment Yellow",
+        "canonical": "oklch(81.1% 0.166 85)",
+        "tonalRamp": [
+          "oklch(15% 0.166 85)",
+          "oklch(27% 0.166 85)",
+          "oklch(38% 0.166 85)",
+          "oklch(49% 0.166 85)",
+          "oklch(61% 0.166 85)",
+          "oklch(72% 0.166 85)",
+          "oklch(84% 0.166 85)",
+          "oklch(95% 0.166 85)"
+        ]
+      },
+      "equipment-yellow-hover": {
+        "role": "primary",
+        "displayName": "Bright Yellow",
+        "canonical": "oklch(86% 0.167 87.7)",
+        "tonalRamp": [
+          "oklch(15% 0.167 87.7)",
+          "oklch(27% 0.167 87.7)",
+          "oklch(38% 0.167 87.7)",
+          "oklch(49% 0.167 87.7)",
+          "oklch(61% 0.167 87.7)",
+          "oklch(72% 0.167 87.7)",
+          "oklch(84% 0.167 87.7)",
+          "oklch(95% 0.167 87.7)"
+        ]
+      },
+      "yellow-ink": {
+        "role": "primary",
+        "displayName": "Yellow Ink",
+        "canonical": "oklch(49.9% 0.103 82)",
+        "tonalRamp": [
+          "oklch(15% 0.103 82)",
+          "oklch(27% 0.103 82)",
+          "oklch(38% 0.103 82)",
+          "oklch(49% 0.103 82)",
+          "oklch(61% 0.103 82)",
+          "oklch(72% 0.103 82)",
+          "oklch(84% 0.103 82)",
+          "oklch(95% 0.103 82)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus (Fence Green)",
+        "canonical": "oklch(37.4% 0.054 169.5)",
+        "tonalRamp": [
+          "oklch(15% 0.054 169.5)",
+          "oklch(27% 0.054 169.5)",
+          "oklch(38% 0.054 169.5)",
+          "oklch(49% 0.054 169.5)",
+          "oklch(61% 0.054 169.5)",
+          "oklch(72% 0.054 169.5)",
+          "oklch(84% 0.054 169.5)",
+          "oklch(95% 0.054 169.5)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "tonalRamp": [
+          "oklch(15% 0.178 28.7)",
+          "oklch(27% 0.178 28.7)",
+          "oklch(38% 0.178 28.7)",
+          "oklch(49% 0.178 28.7)",
+          "oklch(61% 0.178 28.7)",
+          "oklch(72% 0.178 28.7)",
+          "oklch(84% 0.178 28.7)",
+          "oklch(95% 0.178 28.7)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only; one yellow word."
+        "purpose": "Hero H1 only; white on the deep-green hero, max 12ch, letter bounce-in."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section h2s."
+        "purpose": "Every section H2."
+      },
+      "phone-display": {
+        "displayName": "Phone Display",
+        "purpose": "The big tap-to-call number in the closing band."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Who headings and the form heading."
-      },
-      "numeral": {
-        "displayName": "Numeral",
-        "purpose": "Yellow step counters."
+        "purpose": "Who-card H3s."
       },
       "row": {
         "displayName": "Row",
-        "purpose": "Service rows and step leads."
+        "purpose": "Service-row labels on fence green."
       },
-      "lead": {
-        "displayName": "Lead",
-        "purpose": "The hero promise line."
-      },
-      "body": {
-        "displayName": "Body",
-        "purpose": "Owner voice copy."
-      },
-      "label": {
-        "displayName": "Label",
-        "purpose": "Form labels."
+      "step": {
+        "displayName": "Step",
+        "purpose": "Step headings; footer name and wordmark share 21px."
       },
       "button": {
         "displayName": "Button",
-        "purpose": "All button text."
+        "purpose": "All pill buttons."
+      },
+      "field-label": {
+        "displayName": "Field Label",
+        "purpose": "Form labels and legends."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Section ledes, 38ch."
+      },
+      "promise": {
+        "displayName": "Promise",
+        "purpose": "The hero promise line, 32ch (36ch from 760px)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, inputs, chips."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrow pills only (owner-chosen exception)."
       }
     },
     "shadows": [
       {
-        "name": "button-lift",
-        "value": "0 6px 18px -6px rgba(0,0,0,.45)",
-        "purpose": "Filled yellow buttons only."
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(8,24,18,.3)",
+        "purpose": "Floating text circle only; the one lifted element."
+      }
+    ],
+    "textures": [
+      {
+        "name": "deep-green-lines",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Deep-green hero, How-it-works band and footer only. Owner-chosen exception; about 4% white or fainter."
+      }
+    ],
+    "overlays": [
+      {
+        "name": "hero-phone",
+        "value": "linear-gradient(180deg,#10271f calc(100% - var(--strip)),rgba(16,39,31,.55) calc(100% - var(--strip) * .55),rgba(16,39,31,.25) 100%)",
+        "purpose": "Under 760px: words on plain deep green above the photo strip, --strip: clamp(190px,50vw,300px)."
       },
       {
-        "name": "photo-drop",
-        "value": "0 18px 40px -18px rgba(0,0,0,.6)",
-        "purpose": "The work photo only."
+        "name": "hero-tablet",
+        "value": "linear-gradient(90deg,rgba(16,39,31,.93) 0%,rgba(16,39,31,.88) 70%,rgba(16,39,31,.6) 100%)",
+        "purpose": "760-1023px: stays dark further right because the words run past the middle."
+      },
+      {
+        "name": "hero-desktop",
+        "value": "linear-gradient(90deg,rgba(16,39,31,.93) 0%,rgba(16,39,31,.86) 45%,rgba(16,39,31,.42) 100%)",
+        "purpose": "1024px+: full-bleed photo, darkest behind the words on the left."
       }
     ],
     "motion": [
       {
-        "name": "state",
+        "name": "letter-bounce-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), translateX(50px) to 0, opacity 0 to 1, 20ms per letter",
+        "purpose": "Hero H1 only (owner-chosen exception). JS-split, aria-label on H1, plain HTML restored on animationend; skipped under reduced motion and without JS."
+      },
+      {
+        "name": "fade-up",
+        "value": "opacity and translateY(12px), .4s ease-out",
+        "purpose": ".rise elements that start below the first screen only; never hides first-screen content; off without JS or IntersectionObserver and under reduced motion."
+      },
+      {
+        "name": "float-slide",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), translateY(120px) to 0",
+        "purpose": "Floating text circle appears after the hero and hides while the form is on screen."
+      },
+      {
+        "name": "state-color",
+        "value": ".2s",
+        "purpose": "Button and arrow colour/background changes."
+      },
+      {
+        "name": "state-field",
         "value": ".15s",
-        "purpose": "Background, color and border transitions on buttons, arrows, inputs, chips."
+        "purpose": "Field and chip border/background changes."
       },
       {
         "name": "press",
-        "value": "transform .1s, translateY(1px)",
-        "purpose": "Button :active."
-      },
-      {
-        "name": "dirt-tune",
-        "value": "GRADE .40, REPOSE .75, RELAX 5, SPRING 140, DAMP 13, IDLE_MS 2600, GRAIN_VOL 5, DIG_TILT -.55, CARRY_TILT .22, DUMP_TILT -2.1",
-        "purpose": "Canvas dirt physics constants (TUNE object in index.html script)."
+        "value": "transform .12s, scale(.98)",
+        "purpose": "Button active state."
       }
     ],
     "breakpoints": [
       {
-        "name": "md",
-        "value": "700px"
+        "name": "chips-tight",
+        "value": "max-width:380px"
       },
       {
-        "name": "lg",
+        "name": "desktop",
+        "value": "760px"
+      },
+      {
+        "name": "tablet-hero",
+        "value": "760px-1023px"
+      },
+      {
+        "name": "landscape-phone",
+        "value": "min-width:760px and max-height:520px"
+      },
+      {
+        "name": "wide",
         "value": "1024px"
-      }
-    ],
-    "focus": [
-      {
-        "name": "default-ring",
-        "value": "outline:3px solid #f2b705; outline-offset:3px",
-        "purpose": "All focusable elements."
-      },
-      {
-        "name": "form-laser",
-        "value": "border-color:#ff5a45 (controls); outline:3px solid #ff5a45, offset 2px (submit)",
-        "purpose": "Hover and focus inside the estimate form."
       }
     ]
   },
   "components": [
     {
-      "name": "Filled Button",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-fill",
-      "description": "Primary yellow action: text Steve, submit the estimate.",
-      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-fill\" href=\"#\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z\"/></svg>Text me photos for an estimate</a></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--site);padding:24px} .ds-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;border-radius:12px;font:800 1.05rem/1.1 var(--font);text-decoration:none;cursor:pointer;border:2px solid var(--yellow);transition:background .15s,color .15s,transform .1s} .ds-btn:active{transform:translateY(1px)} .ds-btn svg{width:22px;height:22px;flex:none} .ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px} .ds-btn-fill{background:var(--yellow);color:var(--ink);box-shadow:0 6px 18px -6px rgba(0,0,0,.45)} .ds-btn-fill:hover{background:var(--yellow-hi);border-color:var(--yellow-hi)}"
+      "refersTo": "button-primary",
+      "description": "Equipment-yellow pill with Ink text; the main text-for-an-estimate action.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text photos for an estimate</a>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1.15 var(--display);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)} .ds-btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)} .ds-btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Line Button",
+      "name": "Ghost Button",
       "kind": "button",
-      "refersTo": "button-line",
-      "description": "Secondary action: go to the form, see more work on Facebook.",
-      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-line\" href=\"#\">Fill out the estimate form</a></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--site);padding:24px} .ds-btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 28px;border-radius:12px;font:800 1.05rem/1.1 var(--font);text-decoration:none;cursor:pointer;border:2px solid var(--yellow);transition:background .15s,color .15s,transform .1s} .ds-btn:active{transform:translateY(1px)} .ds-btn svg{width:22px;height:22px;flex:none} .ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px} .ds-btn-line{background:transparent;color:var(--cream)} .ds-btn-line:hover{background:rgba(242,183,5,.12)}"
+      "refersTo": "button-ghost",
+      "description": "Outlined pill for dark grounds; the secondary hero action.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Fill out the estimate form</a></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-dark{background-color:var(--deep);background-image:var(--texture);padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1.15 var(--display);text-decoration:none;border:2px solid transparent;transition:background-color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(245,247,243,.75)} .ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)} .ds-btn-ghost:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}"
+    },
+    {
+      "name": "Eyebrow",
+      "kind": "chip",
+      "refersTo": "eyebrow",
+      "description": "Quiet label pill with a yellow dot above a few key headings. Owner-chosen exception; no hover, never a button.",
+      "html": "<p class=\"ds-eyebrow\">For homeowners and contractors</p>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-eyebrow{display:inline-flex;align-items:center;gap:10px;margin:0;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(16,39,31,.06);padding:9px 14px;border-radius:999px} .ds-eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--yellow)}"
+    },
+    {
+      "name": "Who Card",
+      "kind": "card",
+      "refersTo": "card-who",
+      "description": "White 24px card on paper, flat, Cal Sans title over system body.",
+      "html": "<div class=\"ds-paper\"><div class=\"ds-card\"><h3>Homeowners</h3><p>Your yard is where your family lives. I work it carefully and clean up before I go.</p></div></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-paper{background:var(--paper);padding:24px} .ds-card{background:var(--card);border-radius:24px;padding:24px;color:var(--body);font:16px/1.7 var(--text)} .ds-card h3{margin:0;font:400 24px/1.08 var(--display);color:var(--ink)} .ds-card p{margin:8px 0 0}"
     },
     {
       "name": "Service Row",
-      "kind": "custom",
+      "kind": "nav",
       "refersTo": "service-row",
-      "description": "Tap a job to text about it; only the arrow lights up.",
-      "html": "<div class=\"ds-ground\"><ul class=\"ds-svc\"><li><a href=\"#\">Trenching &amp; excavation<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a href=\"#\">Concrete breaking &amp; removal<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil);padding:24px;color:var(--cream);font-family:var(--font)} .ds-svc{list-style:none;margin:0;padding:0} .ds-svc li:first-child a{border-top:1px solid rgba(244,236,218,.14)} .ds-svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(244,236,218,.14);text-decoration:none;color:inherit;font-weight:800;font-size:1.25rem;letter-spacing:-.01em;outline:none} .ds-arrow{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(244,236,218,.1);transition:background .15s,color .15s} .ds-arrow svg{width:18px;height:18px} .ds-svc a:hover .ds-arrow,.ds-svc a:focus-visible .ds-arrow{background:var(--yellow);color:var(--ink)} .ds-svc a:focus-visible .ds-arrow{outline:3px solid var(--yellow);outline-offset:3px}"
+      "description": "Text-link row on fence green; only the arrow circle changes on hover and focus.",
+      "html": "<div class=\"ds-navy\"><ul class=\"ds-svc\"><li><a href=\"#\">Trenching &amp; excavation<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a href=\"#\">Concrete breaking &amp; removal<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-navy{background:var(--navy);padding:0 24px} .ds-svc{list-style:none;margin:0;padding:0} .ds-svc li{border-top:1px solid rgba(255,255,255,.14)} .ds-svc li:last-child{border-bottom:1px solid rgba(255,255,255,.14)} .ds-svc a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px;padding:12px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);outline:none} .ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s} .ds-svc a:hover .ds-arrow{background:var(--yellow);color:var(--ink)} .ds-svc a:focus-visible .ds-arrow{background:var(--yellow);color:var(--ink);outline:3px solid var(--yellow);outline-offset:3px}"
     },
     {
-      "name": "Text Input",
+      "name": "Text Field",
       "kind": "input",
-      "refersTo": "input",
-      "description": "Form field; laser-red border on hover and focus.",
-      "html": "<div class=\"ds-ground\"><label class=\"ds-field\"><span>Where's the job?</span><input placeholder=\"Town or address\"></label></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-field{display:block} .ds-field span{display:block;font-weight:700;margin-bottom:8px} .ds-field input{width:100%;box-sizing:border-box;min-height:52px;padding:13px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);background:rgba(244,236,218,.06);color:var(--cream);font:16px/1.4 var(--font);transition:border-color .15s,background .15s} .ds-field input::placeholder{color:#b7a98c} .ds-field input:hover,.ds-field input:focus{border-color:var(--laser);outline:none;background:rgba(244,236,218,.09)}"
+      "refersTo": "input-text",
+      "description": "Borderless field on the Field Mist fill, 10px radius; Fence Green edge on hover and focus, red when bad.",
+      "html": "<div class=\"ds-form\"><label class=\"ds-label\" for=\"ds-loc\">Where's the job?</label><input class=\"ds-input\" id=\"ds-loc\" type=\"text\" placeholder=\"Town or address\"><div class=\"ds-bad\"><input class=\"ds-input\" type=\"text\" aria-invalid=\"true\"><p class=\"ds-err\">Add the town or address so I know where the job is.</p></div></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-form{background:var(--card);border-radius:24px;padding:24px;display:grid;gap:8px} .ds-label{font:400 17px/1.2 var(--display);color:var(--ink)} .ds-input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s} .ds-input::placeholder{color:var(--soft)} .ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)} .ds-bad{display:grid;gap:8px;margin-top:12px} .ds-bad .ds-input{border-color:var(--error)} .ds-err{margin:0;font:15px/1.5 var(--text);color:var(--error)}"
     },
     {
-      "name": "Job Chips",
+      "name": "Job Chip",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Multi-select job types; laser border on hover/focus, yellow when checked.",
-      "html": "<div class=\"ds-ground\"><div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"checkbox\" checked><span>Concrete breaking</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Grading / gravel</span></label><label class=\"ds-chip\"><input type=\"checkbox\"><span>Tight access</span></label></div></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-chips{display:flex;flex-wrap:wrap;gap:8px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px} .ds-chip span{display:flex;align-items:center;min-height:44px;padding:8px 14px;border-radius:10px;border:2px solid rgba(244,236,218,.22);font-size:1rem;font-weight:600;cursor:pointer;transition:border-color .15s,background .15s,color .15s} .ds-chip span:hover,.ds-chip input:focus-visible+span{border-color:var(--laser)} .ds-chip input:checked+span{background:var(--yellow);border-color:var(--yellow);color:var(--ink)} .ds-chip input:checked+span:hover{border-color:var(--laser)}"
+      "description": "Pill checkbox on Field Mist; selected is solid Ink with white text.",
+      "html": "<div class=\"ds-chips\"><input type=\"checkbox\" id=\"ds-c1\"><label for=\"ds-c1\">Trenching / excavation</label><input type=\"checkbox\" id=\"ds-c2\" checked><label for=\"ds-c2\">Grading / gravel</label></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-chips{display:flex;flex-wrap:wrap;gap:10px;background:var(--card);padding:16px} .ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0} .ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1.2 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s} .ds-chips label:hover{border-color:var(--focus)} .ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:3px} .ds-chips input:checked+label{background:var(--ink);color:#fff}"
     },
     {
-      "name": "Estimate Steps",
+      "name": "Step",
       "kind": "custom",
-      "description": "Ordered steps with heavy yellow numerals.",
-      "html": "<div class=\"ds-ground\"><ol class=\"ds-steps\"><li><div><b>Send me pictures, the location and a description of the work.</b><span>Text is easiest.</span></div></li><li><div><b>I look it over and get back to you with an estimate.</b><span>Straight answer on what it takes.</span></div></li></ol></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil-2);padding:24px;color:var(--cream);font-family:var(--font)} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s} .ds-steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;counter-increment:s} .ds-steps li::before{content:counter(s);font-weight:900;font-size:2.4rem;line-height:.9;color:var(--yellow);text-align:center} .ds-steps b{display:block;font-size:1.25rem;line-height:1.32;padding-top:2px} .ds-steps span{color:var(--cream-dim)}"
+      "refersTo": "step-number",
+      "description": "Yellow numbered circle with a Cal Sans step heading on deep green.",
+      "html": "<div class=\"ds-deep\"><ol class=\"ds-steps\"><li><div><b>Send me pictures, the location and a description.</b><span>Text is easiest.</span></div></li><li><div><b>I look it over and get back to you.</b><span>A straight answer on what the job takes.</span></div></li></ol></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:24px;font:16px/1.7 var(--text)} .ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s} .ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s} .ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font:400 20px/1 var(--display)} .ds-steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px} .ds-steps span{display:block;margin-top:4px}"
     },
     {
-      "name": "Section Headline",
+      "name": "Floating Text Circle",
       "kind": "custom",
-      "description": "Heavy uppercase system-sans h2 on a soil layer.",
-      "html": "<div class=\"ds-ground\"><h2 class=\"ds-h2\">How estimates work</h2></div>",
-      "css": ":host{--site:#17352d;--soil:#3d2a1b;--soil-2:#4a3322;--cream:#f4ecda;--cream-dim:#d8cbb0;--yellow:#f2b705;--yellow-hi:#ffc928;--ink:#1d1a12;--laser:#ff5a45;--font:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif} .ds-ground{background:var(--soil);padding:24px;color:var(--cream);font-family:var(--font)} .ds-h2{margin:0;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;font-size:clamp(2rem,8.5vw,3.6rem)}"
+      "refersTo": "float-text",
+      "description": "The one floating control: a 60px yellow circle with the only shadow in the system.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-float\" href=\"#\" aria-label=\"Text Steve\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":host{--paper:#f5f6f2;--card:#fff;--field:#e5eae3;--ink:#10271f;--body:#28382f;--soft:#4c5a51;--navy:#1f4a3c;--deep:#10271f;--on-dark:#f5f7f3;--on-dark-soft:#c6dccc;--yellow:#f2b705;--yellow-2:#ffc929;--yellow-ink:#805c00;--focus:#1f4a3c;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;--texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)} .ds-stage{background:var(--paper);padding:24px;display:flex;justify-content:flex-end} .ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,18,.3)} .ds-float:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;box-shadow:0 0 0 3px var(--ink),0 10px 28px rgba(8,24,18,.3)}"
     }
   ],
   "narrative": {
-    "northStar": "The Open Trench",
-    "overview": "The page is an active job site seen from the side, and scrolling goes underground. The top is construction-fence green with the soil bank in the hero; below that, services, the estimate steps and the form sit on successively deeper soil layers separated by hand-wavy strata seams; the work photo stands on a second dirt bank; the footer is the deepest soil. Nothing is ever black: the bottom of the page is still dirt.\n\nThe interaction is the identity. The soil is drawn on canvas, slumps to its angle of repose, throws grains, and an excavator bucket follows the finger or mouse, digs, carries and dumps. Left alone, the hero bucket grades the bank to a rotary laser's red line by itself. Everything else on the page is deliberately plain and phone-first so the dirt carries the character and the number stays easy to hit.\n\nType is the system sans at heavy weight, uppercase and tight, like stencil on a machine; controls are equipment yellow; laser red is reserved for the \"you are touching this\" signal on form controls and for the laser beam itself.",
+    "northStar": "The Graded Lot",
+    "overview": "The page reads like the job photo it is built from: a cleared, level site, a green construction fence, one yellow machine. Full-bleed bands alternate light and dark so each section is unmistakable, and everything inside them is soft-cornered, borderless and calm. The system is Ellie's house \"calm band style\" (learned from lpmr.co.uk), coloured from the client's own photo because the business has no logo or brand colours: the fence gives the green, the Wacker Neuson loader gives the yellow.\n\nDensity is low and phone-first. One column on phones, a 1160px container on computers, generous 64px/96px band padding, short rows instead of dense grids. Depth comes from band colour, a white card on a paper ground, and the hero photo, not from shadows. Motion is limited to two owner-chosen moves: the hero headline's letter bounce-in and one 12px fade-up for content below the first screen.\n\nSeveral choices here are owner-chosen exceptions to Impeccable's defaults and are part of the system, not drift: the eyebrow pills, Cal Sans as the display webfont, the hero H1 letter bounce-in, and the faint diagonal-line texture on deep-green bands. Each is bounded by rules below.",
     "keyCharacteristics": [
-      "Fence green surface, soil-brown strata below, no black grounds anywhere.",
-      "Equipment yellow for every primary control and every emphasized numeral or word.",
-      "Laser red only for form hover/focus outlines and the canvas laser beam.",
-      "System font stack, 900 uppercase display, generous 16px body.",
-      "Two interactive canvas dirt scenes; the rest is flat, quiet and touch-sized (44px minimum targets)."
+      "Paper, fence-green and deep-green full-bleed bands, alternating light and dark.",
+      "Equipment yellow is the only warm colour and is used as a fill; it becomes the darker yellow-ink only when it must be text on a light ground.",
+      "Cal Sans (weight 400) for every heading, button, row and field label; the system stack at 16/1.7 for running text.",
+      "Soft, borderless shapes: 24px cards, full pills for buttons, chips and eyebrows, 10px fields on their own tinted fill.",
+      "Flat surfaces; the floating text circle is the only element with a shadow.",
+      "The client's real job photo carries the hero: a bottom strip on phones, full-bleed under a left-dark gradient from 760px."
     ],
     "rules": [
       {
-        "name": "The No Black Ground Rule",
-        "body": "No section, panel or footer is black or near-black. The deepest ground is Deep Soil; when a darker layer is needed, go browner, not blacker.",
+        "name": "The Fill-Not-Text Rule",
+        "body": "Equipment yellow is a surface, not a text colour on light grounds. On paper or white it becomes Yellow Ink; on yellow, text is Ink. White on yellow is never used.",
         "section": "colors"
       },
       {
-        "name": "The Laser Means Touch Rule",
-        "body": "Laser red appears only where the visitor's pointer or focus is on a form control, plus the laser in the canvas. Don't use it for errors (errors use Error Text), decoration or headings.",
+        "name": "The Accent-Phrase Rule",
+        "body": "A heading's closing phrase may turn yellow only on a dark band or the hero (\"in the Poconos.\", \"take on.\", \"work.\"). Light-band headings stay solid Ink.",
         "section": "colors"
       },
       {
-        "name": "The Yellow Is a Control Rule",
-        "body": "Yellow fills are things you press. Yellow text is reserved for emphasis that echoes the controls (the headline word, numerals, Who headings), never body copy.",
+        "name": "The Texture-Whisper Rule",
+        "body": "Deep-green surfaces carry `repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)`. Owner-chosen exception: it stays at about 4% white or fainter so it never reads as lines through text, and it never goes on paper or fence green.",
         "section": "colors"
       },
       {
-        "name": "The System Stack Rule",
-        "body": "The system font stack is a house decision, not a placeholder: no webfont requests, instant first paint inside Facebook's in-app browser. Character comes from weight (900), case and tight tracking. Don't add a display face.",
+        "name": "The One-Weight Display Rule",
+        "body": "Cal Sans is only ever set at 400. Emphasis comes from size and colour, never from bolding the display face.",
         "section": "typography"
       },
       {
-        "name": "The 1rem Floor Rule",
-        "body": "Nothing on the page is smaller than 0.875rem (the \"Poconos, PA\" line under the name); all helper, error and footer text is 1rem.",
+        "name": "The Display-For-Doing Rule",
+        "body": "Anything a visitor taps or answers (buttons, rows, phone numbers, field labels, step headings) is in Cal Sans; anything they read at length is in the system body.",
         "section": "typography"
       },
       {
-        "name": "The Phone-First Rule",
-        "body": "Every layout decision is made for a ~390px phone first; desktop only spreads the same stack into columns. Buttons stack full width on phone.",
-        "section": "layout"
-      },
-      {
-        "name": "The Strata Rule",
-        "body": "Adjacent sections meet at a seam, not a straight edge: the seam is the upper section's color drawn as a wavy 28px edge over the top of the lower one. New sections take the next soil tone and a seam.",
-        "section": "elevation"
-      },
-      {
-        "name": "The Soft-Only Shadow Rule",
-        "body": "Shadows are blurred and negative-spread. No hard offset shadows.",
+        "name": "The Tone-Not-Shadow Rule",
+        "body": "Surfaces separate by colour (paper, white, field mist, fence green, deep green). A shadow appears only on something that floats over the page.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** keep the phone number visible top right on the first screen, as the only number shown there; the hero's two buttons are text and form, phone first.",
-      "**Do** put new sections on the next soil tone with a strata seam, per The Strata Rule.",
-      "**Do** use the 2px laser-red border for hover and focus on any new form control, and the 3px yellow ring for focus everywhere else.",
-      "**Do** keep every tap target at 44px or taller and every text size at 1rem or larger (except the 0.875rem brand subline).",
-      "**Do** keep the email address in the footer only, and the Facebook link as the button directly under the work photo's dirt bank (plus the footer).",
-      "**Do** tune the dirt from `TUNE` first; change `profile()` or `resize()` only for terrain shape or density.",
-      "**Do** keep the canvas soil gradient's last stop equal to `--soil` so the bank flows into the first section."
+      "**Do** alternate full-bleed bands light and dark (paper, fence green, deep green) so each section boundary is obvious.",
+      "**Do** use Equipment Yellow as a fill with Ink text on it, and switch to Yellow Ink (#805c00) whenever yellow must be text or a glyph on paper or white.",
+      "**Do** set every heading, button, row, field label and phone number in Cal Sans at 400, and running text in the system stack at 16/1.7.",
+      "**Do** keep shapes to the three radii: 10px fields, 24px cards, full pills and circles for everything tappable or label-like.",
+      "**Do** put fields and chips on the Field Mist fill with a 2px transparent border that turns Fence Green on hover and focus.",
+      "**Do** make service-style links change only their arrow circle on hover and focus.",
+      "**Do** keep focus visible: 3px outline at 3px offset, Fence Green on light, Equipment Yellow on dark bands, the hero and the footer.",
+      "**Do** keep everything visible without JS and with reduced motion; motion only ever hides content that JS will reveal.",
+      "**Do** limit eyebrows to a few key headings, as quiet `<p>` pills with a yellow dot."
     ],
     "donts": [
-      "**Don't** add a webfont; the system font stack is on purpose.",
-      "**Don't** add a sticky or fixed call bar. (The desktop steps column is sticky inside its grid; that is not a bar.)",
-      "**Don't** use black or near-black grounds anywhere, per The No Black Ground Rule.",
-      "**Don't** repeat the phone number elsewhere in the first screen, or show the email outside the footer.",
-      "**Don't** use laser red as a fill, for text, or for errors.",
-      "**Don't** put kicker or eyebrow labels above headings; the h2 stands alone.",
-      "**Don't** use hard offset shadows."
+      "**Don't** put white text on Equipment Yellow, or Equipment Yellow text on paper or white.",
+      "**Don't** add a second warm accent or a third green; the palette is paper, two greens, one yellow.",
+      "**Don't** add shadows to cards, rows, buttons or fields; the floating text circle is the only lifted element.",
+      "**Don't** give eyebrows an arrow, hover state, shadow or full yellow fill, or let them become headings or appear on every section.",
+      "**Don't** bounce-in any heading other than the hero H1, and don't add motion beyond the bounce-in, the one 12px fade-up and short state transitions.",
+      "**Don't** put the diagonal texture on paper or fence green, or raise it above about 4% white.",
+      "**Don't** add a hover background, underline or outline to a whole service row or the Facebook row.",
+      "**Don't** replace the floating text circle with a sticky bottom bar or add a second floating control.",
+      "**Don't** bold Cal Sans or load another webfont or weight."
     ]
   }
 }

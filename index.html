@@ -191,6 +191,8 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 
 /* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
 .float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,18,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+/* no JS, no circle: it would sit offscreen yet still take keyboard focus */
+html:not(.js) .float{display:none}
 .float.on{transform:none}
 .float svg{width:26px;height:26px}
 .float:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;box-shadow:0 0 0 3px var(--ink),0 10px 28px rgba(8,24,18,.3);border-radius:50%}
