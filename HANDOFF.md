@@ -16,6 +16,9 @@ The business hasn't been contacted, so the whole site was rebuilt under the new 
 - **Impeccable pass** (every mode except live, plus the finish reviewer) applied: yellow focus rings on dark bands (Facebook row, floating circle), "in the Poconos." kept on one line, no stranded words, duplicate form lede removed, close line in first person ("Call or text me."), hero secondary button now "Fill out the estimate form", sideways-phone hero fits its buttons on screen, desktop hero image preloaded, copy button label resets, the invented "Free estimate" eyebrow became "Estimates by text".
 - Hero buttons: "Text photos for an estimate" (yellow) and outlined "Fill out the estimate form". The first was shortened from "Text me photos for an estimate" so it stays on one line at 360px.
 
+- **Docs:** `DESIGN.md` and `.impeccable/design.json` rewritten from the new page; `PRODUCT.md` updated (Cal Sans, calm look). The detector's diagonal-stripes finding is ignored for `index.html` (house rule) in `.impeccable/config.json`.
+- **Live check:** GitHub Pages built commit `8743841` and the live page serves the revamp (checked 2026-10-19). Call Sheet already pointed at the live URL (script reported UNCHANGED).
+
 ## Assumptions I made
 - **First person "I"**: he signs the post "Steve" and writes "Send me pictures".
 - **Colors**: no logo or brand exists. The calm style's navy roles are the construction-fence green from his photo (#1f4a3c / deep #10271f); the accent is the Wacker Neuson equipment yellow (#f2b705).
