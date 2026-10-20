@@ -17,6 +17,30 @@
         ],
         "createdAt": "2026-10-20T01:54:17.989Z",
         "reason": "Ellie's pitch-site house rule: calm-photo-style.md item 2 (2026-10-19) requires the faint diagonal band texture"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "15px",
+        "createdAt": "2026-10-20T01:55:43.403Z",
+        "reason": "Built one-off (form errors/help text), recorded in DESIGN.md prose by the documenter"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "16px",
+        "createdAt": "2026-10-20T01:55:43.466Z",
+        "reason": "Built one-off (sent-message panel), recorded in DESIGN.md prose"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "40px",
+        "createdAt": "2026-10-20T01:55:43.529Z",
+        "reason": "Sideways-phone hero H1 clamp floor from the Impeccable adapt fix"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-20T01:55:43.592Z",
+        "reason": "Desktop step titles, one step up from 21px"
       }
     ]
   }
