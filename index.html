@@ -214,6 +214,10 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .actions .btn{min-width:240px}
   .who{grid-template-columns:1fr 1fr;gap:24px}
 }
+@media (min-width:760px) and (max-width:1023px){
+  /* tablets: the words run past the middle, so the overlay stays dark further right */
+  .hero::before{background:linear-gradient(90deg,rgba(16,39,31,.93) 0%,rgba(16,39,31,.88) 70%,rgba(16,39,31,.6) 100%)}
+}
 @media (min-width:1024px){
   .svc{grid-template-columns:1fr 1fr}
   .svc li:nth-last-child(2){border-bottom:1px solid rgba(255,255,255,.14)}
